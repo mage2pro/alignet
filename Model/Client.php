@@ -20,8 +20,7 @@ class Client {
 	 * @var Client\OrderInterface
 	 */
 	protected $orderHelper;
-
-
+	
 	/**
 	 * @param Client\ConfigInterface $configHelper
 	 * @param Client\OrderInterface $orderHelper
