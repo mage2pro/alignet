@@ -1,6 +1,6 @@
 <?php
-namespace Dfe\CrPayme\Model\Client\Rest\MethodCaller;
-use Dfe\CrPayme\Model\Client\MethodCaller\RawInterface;
+namespace Dfe\Alignet\Model\Client\Rest\MethodCaller;
+use Dfe\Alignet\Model\Client\MethodCaller\RawInterface;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
 class Raw implements RawInterface {

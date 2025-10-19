@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Classic\Order;
+namespace Dfe\Alignet\Model\Client\Classic\Order;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
@@ -11,15 +11,15 @@ use Magento\Framework\Phrase;
 class Notification
 {
     /**
-     * @var \Dfe\CrPayme\Model\Client\Classic\Config
+     * @var \Dfe\Alignet\Model\Client\Classic\Config
      */
     protected $configHelper;
 
     /**
-     * @param \Dfe\CrPayme\Model\Client\Classic\Config $configHelper
+     * @param \Dfe\Alignet\Model\Client\Classic\Config $configHelper
      */
     function __construct(
-        \Dfe\CrPayme\Model\Client\Classic\Config $configHelper
+        \Dfe\Alignet\Model\Client\Classic\Config $configHelper
     ) {
         $this->configHelper = $configHelper;
     }

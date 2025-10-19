@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Logger;
+namespace Dfe\Alignet\Logger;
 
 class Logger extends \Monolog\Logger
 {

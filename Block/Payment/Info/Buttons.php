@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Block\Payment\Info;
+namespace Dfe\Alignet\Block\Payment\Info;
 class Buttons extends \Magento\Framework\View\Element\Template {
 	protected $_template = 'payment/info/buttons.phtml';
 

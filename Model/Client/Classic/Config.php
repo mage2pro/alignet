@@ -3,12 +3,12 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Classic;
+namespace Dfe\Alignet\Model\Client\Classic;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
-use Dfe\CrPayme\Model\Client\ConfigInterface;
-use Dfe\CrPayme\Model\Paymecheckout;
+use Dfe\Alignet\Model\Client\ConfigInterface;
+use Dfe\Alignet\Model\Paymecheckout;
 
 class Config implements ConfigInterface
 {

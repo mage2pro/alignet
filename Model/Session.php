@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Model;
+namespace Dfe\Alignet\Model;
 # 2025-09-23 Dmitrii Fediuk https://upwork.com/fl/mage2pro
 # "Refactor the `Alignet_Paymecheckout` module": https://github.com/innomuebles/m2/issues/10
 /**

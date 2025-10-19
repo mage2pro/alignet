@@ -3,9 +3,9 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Rest\Order;
+namespace Dfe\Alignet\Model\Client\Rest\Order;
 
-class DataValidator extends \Dfe\CrPayme\Model\Client\DataValidator
+class DataValidator extends \Dfe\Alignet\Model\Client\DataValidator
 {
     /**
      * @var array

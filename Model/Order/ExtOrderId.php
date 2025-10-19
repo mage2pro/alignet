@@ -3,12 +3,12 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Order;
+namespace Dfe\Alignet\Model\Order;
 
 class ExtOrderId
 {
     /**
-     * @var \Dfe\CrPayme\Model\ResourceModel\Transaction
+     * @var \Dfe\Alignet\Model\ResourceModel\Transaction
      */
     protected $transactionResource;
 
@@ -18,11 +18,11 @@ class ExtOrderId
     protected $dateTime;
 
     /**
-     * @param \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource
+     * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
      * @param \Magento\Framework\Stdlib\DateTime\DateTime $dateTime
      */
     function __construct(
-        \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource,
+        \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource,
         \Magento\Framework\Stdlib\DateTime\DateTime $dateTime
     ) {
         $this->transactionResource = $transactionResource;

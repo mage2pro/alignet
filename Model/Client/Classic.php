@@ -1,6 +1,6 @@
 <?php
-namespace Dfe\CrPayme\Model\Client;
-final class Classic extends \Dfe\CrPayme\Model\Client {
+namespace Dfe\Alignet\Model\Client;
+final class Classic extends \Dfe\Alignet\Model\Client {
 	/**
 	 * @param Classic\Config $configHelper
 	 * @param Classic\Order $orderHelper

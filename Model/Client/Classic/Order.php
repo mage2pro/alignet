@@ -1,7 +1,7 @@
 <?php
-namespace Dfe\CrPayme\Model\Client\Classic;
+namespace Dfe\Alignet\Model\Client\Classic;
 # 2020-12-09
-class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
+class Order implements \Dfe\Alignet\Model\Client\OrderInterface {
 	const STATUS_PRE_NEW            = 0;
 	const STATUS_NEW                = 1;
 	const STATUS_CANCELLED          = 2;
@@ -43,7 +43,7 @@ class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
 	protected $urlBuilder;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $session;
 
@@ -53,7 +53,7 @@ class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
 	protected $request;
 
 	/**
-	 * @var \Dfe\CrPayme\Logger\Logger
+	 * @var \Dfe\Alignet\Logger\Logger
 	 */
 	protected $logger;
 
@@ -68,7 +68,7 @@ class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
 	protected $methodCaller;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\ResourceModel\Transaction
+	 * @var \Dfe\Alignet\Model\ResourceModel\Transaction
 	 */
 	protected $transactionResource;
 
@@ -86,12 +86,12 @@ class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
 	 * @param \Magento\Framework\View\Context $context
 	 * @param Order\DataValidator $dataValidator
 	 * @param Order\DataGetter $dataGetter
-	 * @param \Dfe\CrPayme\Model\Session $session
+	 * @param \Dfe\Alignet\Model\Session $session
 	 * @param \Magento\Framework\App\RequestInterface $request
-	 * @param \Dfe\CrPayme\Logger\Logger $logger
+	 * @param \Dfe\Alignet\Logger\Logger $logger
 	 * @param Order\Notification $notificationHelper
 	 * @param MethodCaller $methodCaller
-	 * @param \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource
+	 * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
 	 * @param Order\Processor $orderProcessor
 	 * @param \Magento\Framework\Controller\Result\RawFactory $rawResultFactory
 	 */
@@ -99,12 +99,12 @@ class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
 		\Magento\Framework\View\Context $context,
 		Order\DataValidator $dataValidator,
 		Order\DataGetter $dataGetter,
-		\Dfe\CrPayme\Model\Session $session,
+		\Dfe\Alignet\Model\Session $session,
 		\Magento\Framework\App\RequestInterface $request,
-		\Dfe\CrPayme\Logger\Logger $logger,
+		\Dfe\Alignet\Logger\Logger $logger,
 		Order\Notification $notificationHelper,
 		MethodCaller $methodCaller,
-		\Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource,
+		\Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource,
 		Order\Processor $orderProcessor,
 		\Magento\Framework\Controller\Result\RawFactory $rawResultFactory
 	) {
@@ -159,8 +159,8 @@ class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
 	/**
 	 * 2020-12-09
 	 * @override
-	 * @see \Dfe\CrPayme\Model\Client\OrderInterface::create()
-	 * @used-by \Dfe\CrPayme\Model\Client::orderCreate()
+	 * @see \Dfe\Alignet\Model\Client\OrderInterface::create()
+	 * @used-by \Dfe\Alignet\Model\Client::orderCreate()
 	 * @param array $data
 	 * @return array
 	 */
@@ -237,8 +237,8 @@ class Order implements \Dfe\CrPayme\Model\Client\OrderInterface {
 	/**
 	 * 2020-12-09
 	 * @override
-	 * @see \Dfe\CrPayme\Model\Client\OrderInterface::getDataForOrderCreate()
-	 * @used-by \Dfe\CrPayme\Controller\Payment\Start::execute()
+	 * @see \Dfe\Alignet\Model\Client\OrderInterface::getDataForOrderCreate()
+	 * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
 	 */
 	function getDataForOrderCreate(\Magento\Sales\Model\Order $order) {
 		return $this->dataGetter->getBasicData($order);

@@ -1,8 +1,8 @@
 <?php
-namespace Dfe\CrPayme\Block\Checkout;
+namespace Dfe\Alignet\Block\Checkout;
 class Fail extends \Magento\Checkout\Block\Onepage\Success {
 	/**
-	 * @var \Dfe\CrPayme\Helper\Payment
+	 * @var \Dfe\Alignet\Helper\Payment
 	 */
 	protected $paymentHelper;
 
@@ -11,7 +11,7 @@ class Fail extends \Magento\Checkout\Block\Onepage\Success {
 		\Magento\Checkout\Model\Session $checkoutSession,
 		\Magento\Sales\Model\Order\Config $orderConfig,
 		\Magento\Framework\App\Http\Context $httpContext,
-		\Dfe\CrPayme\Helper\Payment $paymentHelper,
+		\Dfe\Alignet\Helper\Payment $paymentHelper,
 		array $data = []
 	) {
 		parent::__construct(

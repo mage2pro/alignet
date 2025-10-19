@@ -23,15 +23,15 @@
                     </field>
                        <field id="payme_environment" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Ambiente</label>
-                        <source_model>Dfe\CrPayme\Model\System\Config\Source\Options\Ambiente</source_model>
+                        <source_model>Dfe\Alignet\Model\System\Config\Source\Options\Ambiente</source_model>
                     </field>
                     <field id="payme_esquema" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Esquema de Integración</label>
-                        <source_model>Dfe\CrPayme\Model\System\Config\Source\Options\Esquema</source_model>
+                        <source_model>Dfe\Alignet\Model\System\Config\Source\Options\Esquema</source_model>
                     </field>
                     <field id="payme_modal_type" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Diseño de Modal</label>
-                        <source_model>Dfe\CrPayme\Model\System\Config\Source\Options\Action</source_model>
+                        <source_model>Dfe\Alignet\Model\System\Config\Source\Options\Action</source_model>
                         <depends>
                             <field id="*/*/main_parameters/payme_esquema">1</field>
                         </depends>
@@ -39,7 +39,7 @@
                       <field id="callbackurl" translate="label" type="link" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Url de Respuesta</label>
                         <validate>validate-no-empty</validate>
-                       <!-- <frontend_model>Dfe\CrPayme\Block\System\Config\Form\Field\Disable</frontend_model> -->
+                       <!-- <frontend_model>Dfe\Alignet\Block\System\Config\Form\Field\Disable</frontend_model> -->
                     </field>
 
                 </group>

@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Controller\Payment;
+namespace Dfe\Alignet\Controller\Payment;
 class Repeat extends \Magento\Framework\App\Action\Action {
 	/**
 	 * @var \Magento\Framework\App\Action\Context
@@ -7,19 +7,19 @@ class Repeat extends \Magento\Framework\App\Action\Action {
 	protected $context;
 
 	/**
-	 * @var \Dfe\CrPayme\Helper\Payment
+	 * @var \Dfe\Alignet\Helper\Payment
 	 */
 	protected $paymentHelper;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $session;
 
 	function __construct(
 		\Magento\Framework\App\Action\Context $context,
-		\Dfe\CrPayme\Helper\Payment $paymentHelper,
-		\Dfe\CrPayme\Model\Session $session
+		\Dfe\Alignet\Helper\Payment $paymentHelper,
+		\Dfe\Alignet\Model\Session $session
 	) {
 		parent::__construct($context);
 		$this->context = $context;

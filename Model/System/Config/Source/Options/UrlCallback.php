@@ -10,7 +10,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\System\Config\Source\Options;
+namespace Dfe\Alignet\Model\System\Config\Source\Options;
 
 use Magento\Config\Block\System\Config\Form\Field;
 use Magento\Payment\Model\Method\AbstractMethod;

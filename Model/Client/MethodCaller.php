@@ -3,9 +3,9 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client;
+namespace Dfe\Alignet\Model\Client;
 
-use Dfe\CrPayme\Model\Client\MethodCallerInterface;
+use Dfe\Alignet\Model\Client\MethodCallerInterface;
 
 class MethodCaller implements MethodCallerInterface
 {
@@ -15,17 +15,17 @@ class MethodCaller implements MethodCallerInterface
     protected $_rawMethod;
 
     /**
-     * @var \Dfe\CrPayme\Logger\Logger
+     * @var \Dfe\Alignet\Logger\Logger
      */
     protected $_logger;
 
     /**
      * @param MethodCaller\RawInterface $rawMethod
-     * @param \Dfe\CrPayme\Logger\Logger $logger
+     * @param \Dfe\Alignet\Logger\Logger $logger
      */
     function __construct(
         MethodCaller\RawInterface $rawMethod,
-        \Dfe\CrPayme\Logger\Logger $logger
+        \Dfe\Alignet\Logger\Logger $logger
     ) {
         $this->_rawMethod = $rawMethod;
         $this->_logger = $logger;

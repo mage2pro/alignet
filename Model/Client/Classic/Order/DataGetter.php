@@ -1,14 +1,14 @@
 <?php
-namespace Dfe\CrPayme\Model\Client\Classic\Order;
+namespace Dfe\Alignet\Model\Client\Classic\Order;
 # 2020-12-09
 final class DataGetter {
 	 /**
-	 * @var \Dfe\CrPayme\Model\Order\ExtOrderId
+	 * @var \Dfe\Alignet\Model\Order\ExtOrderId
 	 */
 	protected $extOrderIdHelper;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Client\Classic\Config
+	 * @var \Dfe\Alignet\Model\Client\Classic\Config
 	 */
 	protected $configHelper;
 
@@ -18,40 +18,40 @@ final class DataGetter {
 	protected $dateTime;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $session;
 
 
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $idEntCommerce;
 
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $keywallet;
 
 
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $idCommerce;
 
 
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $key;
 
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $wsdl;
 
@@ -65,16 +65,16 @@ final class DataGetter {
 
 
 	/**
-	 * @param \Dfe\CrPayme\Model\Order\ExtOrderId $extOrderIdHelper
-	 * @param \Dfe\CrPayme\Model\Client\Classic\Config $configHelper
+	 * @param \Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper
+	 * @param \Dfe\Alignet\Model\Client\Classic\Config $configHelper
 	 * @param \Magento\Framework\Stdlib\DateTime\DateTime $dateTime
-	 * @param \Dfe\CrPayme\Model\Session $session
+	 * @param \Dfe\Alignet\Model\Session $session
 	 */
 	function __construct(
-		\Dfe\CrPayme\Model\Order\ExtOrderId $extOrderIdHelper,
-		\Dfe\CrPayme\Model\Client\Classic\Config $configHelper,
+		\Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper,
+		\Dfe\Alignet\Model\Client\Classic\Config $configHelper,
 		\Magento\Framework\Stdlib\DateTime\DateTime $dateTime,
-		\Dfe\CrPayme\Model\Session $session
+		\Dfe\Alignet\Model\Session $session
 	) {
 		$this->extOrderIdHelper = $extOrderIdHelper;
 		$this->configHelper = $configHelper;
@@ -83,7 +83,7 @@ final class DataGetter {
 	}
 
 	/**
-	 * @used-by \Dfe\CrPayme\Model\Client\Classic\Order::getDataForOrderCreate()
+	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order::getDataForOrderCreate()
 	 * @param \Magento\Sales\Model\Order $order
 	 * @return array
 	 */

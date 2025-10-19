@@ -1,6 +1,6 @@
 <?php
 
-namespace Dfe\CrPayme\Setup;
+namespace Dfe\Alignet\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;

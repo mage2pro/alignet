@@ -3,9 +3,9 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Rest\Order;
+namespace Dfe\Alignet\Model\Client\Rest\Order;
 
-use Dfe\CrPayme\Model\Client\Rest\Config;
+use Dfe\Alignet\Model\Client\Rest\Config;
 
 class DataGetter
 {
@@ -20,7 +20,7 @@ class DataGetter
     protected $configHelper;
 
     /**
-     * @var \Dfe\CrPayme\Model\Order\ExtOrderId
+     * @var \Dfe\Alignet\Model\Order\ExtOrderId
      */
     protected $extOrderIdHelper;
 
@@ -31,7 +31,7 @@ class DataGetter
     function __construct(
         \Magento\Framework\View\Context $context,
         Config $configHelper,
-        \Dfe\CrPayme\Model\Order\ExtOrderId $extOrderIdHelper
+        \Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper
     ) {
         $this->urlBuilder = $context->getUrlBuilder();
         $this->configHelper = $configHelper;

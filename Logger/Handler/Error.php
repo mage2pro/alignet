@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Logger\Handler;
+namespace Dfe\Alignet\Logger\Handler;
 
 use Monolog\Logger;
 

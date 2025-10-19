@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model;
+namespace Dfe\Alignet\Model;
 
 class ClientFactory
 {

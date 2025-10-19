@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Sales;
+namespace Dfe\Alignet\Model\Sales;
 
 class Order extends \Magento\Sales\Model\Order
 {
@@ -14,7 +14,7 @@ class Order extends \Magento\Sales\Model\Order
         \Magento\Framework\Api\AttributeValueFactory $customAttributeFactory,
         \Magento\Framework\Stdlib\DateTime\TimezoneInterface $timezone,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
-        \Dfe\CrPayme\Model\Sales\Order\Config $orderConfig,
+        \Dfe\Alignet\Model\Sales\Order\Config $orderConfig,
         \Magento\Catalog\Api\ProductRepositoryInterface $productRepository,
         \Magento\Sales\Model\ResourceModel\Order\Item\CollectionFactory $orderItemCollectionFactory,
         \Magento\Catalog\Model\Product\Visibility $productVisibility,

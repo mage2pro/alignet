@@ -1,8 +1,8 @@
 <?php
-namespace Dfe\CrPayme\Controller\Classic;
+namespace Dfe\Alignet\Controller\Classic;
 class Form extends \Magento\Framework\App\Action\Action {
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $session;
 
@@ -13,11 +13,11 @@ class Form extends \Magento\Framework\App\Action\Action {
 
 	/**
 	 * @param \Magento\Framework\App\Action\Context $context
-	 * @param \Dfe\CrPayme\Model\Session $session
+	 * @param \Dfe\Alignet\Model\Session $session
 	 */
 	function __construct(
 		\Magento\Framework\App\Action\Context $context,
-		\Dfe\CrPayme\Model\Session $session,
+		\Dfe\Alignet\Model\Session $session,
 		\Magento\Framework\View\Result\PageFactory $resultPageFactory
 	) {
 		parent::__construct($context);

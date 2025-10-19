@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Block;
+namespace Dfe\Alignet\Block;
 class Response extends \Magento\Framework\View\Element\Template
 {
 	function __construct(\Magento\Framework\View\Element\Template\Context $context)

@@ -3,30 +3,30 @@
  *
  */
 
-namespace Dfe\CrPayme\Helper;
+namespace Dfe\Alignet\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 
 class Payment extends AbstractHelper
 {
     /**
-     * @var \Dfe\CrPayme\Model\ResourceModel\Transaction
+     * @var \Dfe\Alignet\Model\ResourceModel\Transaction
      */
     protected $transactionResource;
 
     /**
-     * @var \Dfe\CrPayme\Model\Order
+     * @var \Dfe\Alignet\Model\Order
      */
     protected $orderHelper;
 
     /**
      * @param \Magento\Framework\App\Helper\Context $context
-     * @param \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource
+     * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
      */
     function __construct(
         \Magento\Framework\App\Helper\Context $context,
-        \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource,
-        \Dfe\CrPayme\Model\Order $orderHelper
+        \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource,
+        \Dfe\Alignet\Model\Order $orderHelper
     ) {
         parent::__construct($context);
         $this->transactionResource = $transactionResource;

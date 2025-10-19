@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\ResourceModel;
+namespace Dfe\Alignet\Model\ResourceModel;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 

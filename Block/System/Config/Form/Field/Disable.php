@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Block\System\Config\Form\Field;
+namespace Dfe\Alignet\Block\System\Config\Form\Field;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 

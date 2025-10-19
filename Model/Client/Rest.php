@@ -1,6 +1,6 @@
 <?php
-namespace Dfe\CrPayme\Model\Client;
-final class Rest extends \Dfe\CrPayme\Model\Client {
+namespace Dfe\Alignet\Model\Client;
+final class Rest extends \Dfe\Alignet\Model\Client {
 	/**
 	 * @param Rest\Config $configHelper
 	 * @param Rest\Order $orderHelper

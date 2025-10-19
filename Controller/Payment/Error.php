@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Controller\Payment;
+namespace Dfe\Alignet\Controller\Payment;
 class Error extends \Magento\Checkout\Controller\Onepage\Success {
 	function execute()
 	{

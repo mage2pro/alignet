@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Classic\MethodCaller\SoapClient;
+namespace Dfe\Alignet\Model\Client\Classic\MethodCaller\SoapClient;
 
 class Order extends \Zend\Soap\Client
 {

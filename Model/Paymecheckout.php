@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Model;
+namespace Dfe\Alignet\Model;
 
 use Magento\Payment\Model\Method\AbstractMethod;
 

@@ -3,9 +3,9 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Classic\MethodCaller;
+namespace Dfe\Alignet\Model\Client\Classic\MethodCaller;
 
-use Dfe\CrPayme\Model\Client\MethodCaller\RawInterface;
+use Dfe\Alignet\Model\Client\MethodCaller\RawInterface;
 
 class Raw implements RawInterface
 {

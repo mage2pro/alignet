@@ -1,20 +1,20 @@
 <?php
-namespace Dfe\CrPayme\Block\Payment\Repeat;
+namespace Dfe\Alignet\Block\Payment\Repeat;
 class Fail extends \Magento\Framework\View\Element\Template {
 	/**
-	 * @var \Dfe\CrPayme\Helper\Payment
+	 * @var \Dfe\Alignet\Helper\Payment
 	 */
 	protected $paymentHelper;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $session;
 
 	function __construct(
 		\Magento\Framework\View\Element\Template\Context $context,
-		\Dfe\CrPayme\Model\Session $session,
-		\Dfe\CrPayme\Helper\Payment $paymentHelper,
+		\Dfe\Alignet\Model\Session $session,
+		\Dfe\Alignet\Helper\Payment $paymentHelper,
 		array $data = []
 	) {
 		parent::__construct(

@@ -1,26 +1,26 @@
 <?php
-namespace Dfe\CrPayme\Block\Payment;
+namespace Dfe\Alignet\Block\Payment;
 class Info extends \Magento\Payment\Block\Info {
 	/**
-	 * @var \Dfe\CrPayme\Model\ResourceModel\Transaction
+	 * @var \Dfe\Alignet\Model\ResourceModel\Transaction
 	 */
 	protected $transactionResource;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\ClientFactory
+	 * @var \Dfe\Alignet\Model\ClientFactory
 	 */
 	protected $clientFactory;
 
 	/**
 	 * @param \Magento\Framework\View\Element\Template\Context $context
-	 * @param \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource
-	 * @param \Dfe\CrPayme\Model\ClientFactory $clientFactory
+	 * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
+	 * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
 	 * @param array $data
 	 */
 	function __construct(
 		\Magento\Framework\View\Element\Template\Context $context,
-		\Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource,
-		\Dfe\CrPayme\Model\ClientFactory $clientFactory,
+		\Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource,
+		\Dfe\Alignet\Model\ClientFactory $clientFactory,
 		array $data = []
 	) {
 		parent::__construct($context, $data);
@@ -37,7 +37,7 @@ class Info extends \Magento\Payment\Block\Info {
 	protected function _prepareSpecificInformation($transport = null)
 	{
 		/**
-		 * @var $client \Dfe\CrPayme\Model\Client
+		 * @var $client \Dfe\Alignet\Model\Client
 		 */
 		$transport = parent::_prepareSpecificInformation($transport);
 		$orderId = $this->getInfo()->getParentId();

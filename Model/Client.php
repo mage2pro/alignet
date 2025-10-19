@@ -1,11 +1,11 @@
 <?php
-namespace Dfe\CrPayme\Model;
+namespace Dfe\Alignet\Model;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
 /**
  * 2020-12-09
- * @see \Dfe\CrPayme\Model\Client\Classic
- * @see \Dfe\CrPayme\Model\Client\Rest
+ * @see \Dfe\Alignet\Model\Client\Classic
+ * @see \Dfe\Alignet\Model\Client\Rest
  */
 class Client {
 
@@ -38,7 +38,7 @@ class Client {
 
 	/**
 	 * 2020-12-09
-	 * @used-by \Dfe\CrPayme\Controller\Payment\Start::execute()
+	 * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
 	 * @param array $data
 	 * @return array (keys: orderId, redirectUri, extOrderId)
 	 * @throws LocalizedException

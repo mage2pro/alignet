@@ -1,40 +1,40 @@
 <?php
-namespace Dfe\CrPayme\Controller\Payment;
+namespace Dfe\Alignet\Controller\Payment;
 use Magento\Framework\Exception\LocalizedException;
 class Start extends \Magento\Framework\App\Action\Action {
 	/**
-	 * @var \Dfe\CrPayme\Model\ClientFactory
+	 * @var \Dfe\Alignet\Model\ClientFactory
 	 */
 	protected $clientFactory;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Order
+	 * @var \Dfe\Alignet\Model\Order
 	 */
 	protected $orderHelper;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $session;
 
 	/**
-	 * @var \Dfe\CrPayme\Logger\Logger
+	 * @var \Dfe\Alignet\Logger\Logger
 	 */
 	protected $logger;
 
 	/**
 	 * @param \Magento\Framework\App\Action\Context $context
-	 * @param \Dfe\CrPayme\Model\ClientFactory $clientFactory
-	 * @param \Dfe\CrPayme\Model\Order $orderHelper
-	 * @param \Dfe\CrPayme\Model\Session $session
-	 * @param \Dfe\CrPayme\Logger\Logger $logger
+	 * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
+	 * @param \Dfe\Alignet\Model\Order $orderHelper
+	 * @param \Dfe\Alignet\Model\Session $session
+	 * @param \Dfe\Alignet\Logger\Logger $logger
 	 */
 	function __construct(
 		\Magento\Framework\App\Action\Context $context,
-		\Dfe\CrPayme\Model\ClientFactory $clientFactory,
-		\Dfe\CrPayme\Model\Order $orderHelper,
-		\Dfe\CrPayme\Model\Session $session,
-		\Dfe\CrPayme\Logger\Logger $logger
+		\Dfe\Alignet\Model\ClientFactory $clientFactory,
+		\Dfe\Alignet\Model\Order $orderHelper,
+		\Dfe\Alignet\Model\Session $session,
+		\Dfe\Alignet\Logger\Logger $logger
 	) {
 		parent::__construct($context);
 		$this->clientFactory = $clientFactory;
@@ -48,7 +48,7 @@ class Start extends \Magento\Framework\App\Action\Action {
 	 */
 	function execute() {
 		/**
-		 * @var $clientOrderHelper \Dfe\CrPayme\Model\Client\OrderInterface
+		 * @var $clientOrderHelper \Dfe\Alignet\Model\Client\OrderInterface
 		 * @var $resultRedirect \Magento\Framework\Controller\Result\Redirect
 		 */
 		$resultRedirect = $this->resultRedirectFactory->create();

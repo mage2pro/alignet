@@ -3,9 +3,9 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Sales\Order;
+namespace Dfe\Alignet\Model\Sales\Order;
 
-use Dfe\CrPayme\Model\Sales\Order;
+use Dfe\Alignet\Model\Sales\Order;
 
 class Config extends \Magento\Sales\Model\Order\Config
 {
@@ -35,7 +35,7 @@ class Config extends \Magento\Sales\Model\Order\Config
     /**
      * Gets PayuLatam-specific default status for state.
 	 * 2020-12-08 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
-	 * "«Declaration of Dfe\CrPayme\Model\Sales\Order\Config::getStateDefaultStatus($state)
+	 * "«Declaration of Dfe\Alignet\Model\Sales\Order\Config::getStateDefaultStatus($state)
 	 * must be compatible with Magento\Sales\Model\Order\Config::getStateDefaultStatus($state): ?string»":
 	 * https://github.com/innomuebles/m2/issues/6
      *

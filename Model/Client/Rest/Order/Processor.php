@@ -3,21 +3,21 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Rest\Order;
+namespace Dfe\Alignet\Model\Client\Rest\Order;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
-use \Dfe\CrPayme\Model\Client\Rest\Order;
+use \Dfe\Alignet\Model\Client\Rest\Order;
 
 class Processor
 {
     /**
-     * @var \Dfe\CrPayme\Model\Order\Processor
+     * @var \Dfe\Alignet\Model\Order\Processor
      */
     protected $orderProcessor;
 
     function __construct(
-        \Dfe\CrPayme\Model\Order\Processor $orderProcessor
+        \Dfe\Alignet\Model\Order\Processor $orderProcessor
     ) {
         $this->orderProcessor = $orderProcessor;
     }

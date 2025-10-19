@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Controller\Classic;
+namespace Dfe\Alignet\Controller\Classic;
 use Magento\Checkout\Model\Session as CheckoutSession;
 use Magento\Framework\App\CsrfAwareActionInterface;
 use Magento\Framework\App\RequestInterface;
@@ -12,7 +12,7 @@ use Magento\Sales\Model\Order\Payment as OP;
 /** @final Unable to use the PHP «final» keyword here because of the M2 code generation. */
 class Response extends \Magento\Framework\App\Action\Action implements CsrfAwareActionInterface {
 	 /**
-	 * @var \Dfe\CrPayme\Model\Session
+	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $session;
 
@@ -30,11 +30,11 @@ class Response extends \Magento\Framework\App\Action\Action implements CsrfAware
 
 	/**
 	 * @param \Magento\Framework\App\Action\Context $context
-	 * @param \Dfe\CrPayme\Model\Session $session
+	 * @param \Dfe\Alignet\Model\Session $session
 	 */
 	function __construct(
 		\Magento\Framework\App\Action\Context $context,
-		\Dfe\CrPayme\Model\Session $session,
+		\Dfe\Alignet\Model\Session $session,
 		\Magento\Framework\View\Result\PageFactory $resultPageFactory,
 		\Magento\Sales\Model\OrderFactory $orderFactory,
 		\Magento\Sales\Api\OrderRepositoryInterface $orderRepository

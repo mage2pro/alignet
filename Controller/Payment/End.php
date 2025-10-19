@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Controller\Payment;
+namespace Dfe\Alignet\Controller\Payment;
 
 use Magento\Framework\Exception\LocalizedException;
 
@@ -20,12 +20,12 @@ class End extends \Magento\Framework\App\Action\Action
     protected $checkoutSession;
 
     /**
-     * @var \Dfe\CrPayme\Model\Session
+     * @var \Dfe\Alignet\Model\Session
      */
     protected $session;
 
     /**
-     * @var \Dfe\CrPayme\Model\ClientFactory
+     * @var \Dfe\Alignet\Model\ClientFactory
      */
     protected $clientFactory;
 
@@ -35,12 +35,12 @@ class End extends \Magento\Framework\App\Action\Action
     protected $context;
 
     /**
-     * @var \Dfe\CrPayme\Model\Order
+     * @var \Dfe\Alignet\Model\Order
      */
     protected $orderHelper;
 
     /**
-     * @var \Dfe\CrPayme\Logger\Logger
+     * @var \Dfe\Alignet\Logger\Logger
      */
     protected $logger;
 
@@ -48,19 +48,19 @@ class End extends \Magento\Framework\App\Action\Action
      * @param \Magento\Framework\App\Action\Context $context
      * @param \Magento\Checkout\Model\Session\SuccessValidator $successValidator
      * @param \Magento\Checkout\Model\Session $checkoutSession
-     * @param \Dfe\CrPayme\Model\Session $session
-     * @param \Dfe\CrPayme\Model\ClientFactory $clientFactory
-     * @param \Dfe\CrPayme\Model\Order $orderHelper
-     * @param \Dfe\CrPayme\Logger\Logger $logger
+     * @param \Dfe\Alignet\Model\Session $session
+     * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
+     * @param \Dfe\Alignet\Model\Order $orderHelper
+     * @param \Dfe\Alignet\Logger\Logger $logger
      */
     function __construct(
         \Magento\Framework\App\Action\Context $context,
         \Magento\Checkout\Model\Session\SuccessValidator $successValidator,
         \Magento\Checkout\Model\Session $checkoutSession,
-        \Dfe\CrPayme\Model\Session $session,
-        \Dfe\CrPayme\Model\ClientFactory $clientFactory,
-        \Dfe\CrPayme\Model\Order $orderHelper,
-        \Dfe\CrPayme\Logger\Logger $logger
+        \Dfe\Alignet\Model\Session $session,
+        \Dfe\Alignet\Model\ClientFactory $clientFactory,
+        \Dfe\Alignet\Model\Order $orderHelper,
+        \Dfe\Alignet\Logger\Logger $logger
     ) {
         parent::__construct($context);
         $this->context = $context;
@@ -78,7 +78,7 @@ class End extends \Magento\Framework\App\Action\Action
     function execute()
     {
         /**
-         * @var $clientOrderHelper \Dfe\CrPayme\Model\Client\OrderInterface
+         * @var $clientOrderHelper \Dfe\Alignet\Model\Client\OrderInterface
          */
 
 
@@ -120,7 +120,7 @@ class End extends \Magento\Framework\App\Action\Action
     }
 
     /**
-     * @return \Dfe\CrPayme\Model\Client\OrderInterface
+     * @return \Dfe\Alignet\Model\Client\OrderInterface
      */
     protected function getClientOrderHelper()
     {

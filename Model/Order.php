@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Model;
+namespace Dfe\Alignet\Model;
 class Order {
 	/**
 	 * @var ResourceModel\Transaction
@@ -163,7 +163,7 @@ class Order {
 	}
 
 	/**
-	 * @used-by \Dfe\CrPayme\Controller\Payment\Start::execute()
+	 * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
 	 * @return int|false
 	 */
 	function getOrderIdForPaymentStart() {

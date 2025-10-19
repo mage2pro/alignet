@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client;
+namespace Dfe\Alignet\Model\Client;
 
 class DataValidator
 {

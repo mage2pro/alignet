@@ -10,7 +10,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\System\Config\Source\Options;
+namespace Dfe\Alignet\Model\System\Config\Source\Options;
 
 use Magento\Framework\Option\ArrayInterface;
 use Magento\Payment\Model\Method\AbstractMethod;

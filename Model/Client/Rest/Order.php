@@ -1,7 +1,7 @@
 <?php
-namespace Dfe\CrPayme\Model\Client\Rest;
-use Dfe\CrPayme\Model\Client\OrderInterface;
-use Dfe\CrPayme\Model\Client\Rest\MethodCaller;
+namespace Dfe\Alignet\Model\Client\Rest;
+use Dfe\Alignet\Model\Client\OrderInterface;
+use Dfe\Alignet\Model\Client\Rest\MethodCaller;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
 # 2020-12-09
@@ -51,7 +51,7 @@ final class Order implements OrderInterface {
 	protected $rawResultFactory;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\ResourceModel\Transaction
+	 * @var \Dfe\Alignet\Model\ResourceModel\Transaction
 	 */
 	protected $transactionResource;
 
@@ -63,8 +63,8 @@ final class Order implements OrderInterface {
 	/**
 	 * @param Order\DataValidator $dataValidator
 	 * @param Order\DataGetter $dataGetter
-	 * @param \Dfe\CrPayme\Model\Client\Rest\MethodCaller $methodCaller
-	 * @param \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource
+	 * @param \Dfe\Alignet\Model\Client\Rest\MethodCaller $methodCaller
+	 * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
 	 * @param Order\Processor $orderProcessor
 	 * @param \Magento\Framework\Controller\Result\RawFactory $rawResultFactory
 	 * @param \Magento\Framework\App\RequestInterface $request
@@ -73,7 +73,7 @@ final class Order implements OrderInterface {
 		Order\DataValidator $dataValidator,
 		Order\DataGetter $dataGetter,
 		MethodCaller $methodCaller,
-		\Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource,
+		\Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource,
 		Order\Processor $orderProcessor,
 		\Magento\Framework\Controller\Result\RawFactory $rawResultFactory,
 		\Magento\Framework\App\RequestInterface $request
@@ -210,7 +210,7 @@ final class Order implements OrderInterface {
 	/**
 	 * 2020-12-09
 	 * @override
-	 * @see \Dfe\CrPayme\Model\Client\OrderInterface::getDataForOrderCreate()
+	 * @see \Dfe\Alignet\Model\Client\OrderInterface::getDataForOrderCreate()
 	 */
 	function getDataForOrderCreate(\Magento\Sales\Model\Order $order) {
 		$data = ['products' => $this->dataGetter->getProductsData($order)];

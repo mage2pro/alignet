@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Block;
+namespace Dfe\Alignet\Block;
 class Messages extends \Magento\Framework\View\Element\Messages {
 	protected function _prepareLayout()
 	{

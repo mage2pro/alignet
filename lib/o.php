@@ -1,5 +1,5 @@
 <?php
-use Dfe\CrPayme\Model\Session as S;
+use Dfe\Alignet\Model\Session as S;
 
 /**
  * 2025-09-23 Dmitrii Fediuk https://upwork.com/fl/mage2pro

@@ -3,7 +3,7 @@
 	<body>
 		<referenceBlock name="order_additional_info">
 			<block
-				class="Dfe\CrPayme\Block\Adminhtml\Order\View\Orderdetail"
+				class="Dfe\Alignet\Block\Adminhtml\Order\View\Orderdetail"
 				template="Dfe_Alignet::order/view/orderdetail.phtml"
 			/>
 		</referenceBlock>

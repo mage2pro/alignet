@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Controller\Payment;
+namespace Dfe\Alignet\Controller\Payment;
 use Magento\Framework\Exception\LocalizedException;
 class Notify extends \Magento\Framework\App\Action\Action {
 	/**
@@ -8,7 +8,7 @@ class Notify extends \Magento\Framework\App\Action\Action {
 	protected $context;
 
 	/**
-	 * @var \Dfe\CrPayme\Model\ClientFactory
+	 * @var \Dfe\Alignet\Model\ClientFactory
 	 */
 	protected $clientFactory;
 
@@ -18,21 +18,21 @@ class Notify extends \Magento\Framework\App\Action\Action {
 	protected $resultForwardFactory;
 
 	/**
-	 * @var \Dfe\CrPayme\Logger\Logger
+	 * @var \Dfe\Alignet\Logger\Logger
 	 */
 	protected $logger;
 
 	/**
 	 * @param \Magento\Framework\App\Action\Context $context
-	 * @param \Dfe\CrPayme\Model\ClientFactory $clientFactory
+	 * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
 	 * @param \Magento\Framework\Controller\Result\ForwardFactory $resultForwardFactory
-	 * @param \Dfe\CrPayme\Logger\Logger $logger
+	 * @param \Dfe\Alignet\Logger\Logger $logger
 	 */
 	function __construct(
 		\Magento\Framework\App\Action\Context $context,
-		\Dfe\CrPayme\Model\ClientFactory $clientFactory,
+		\Dfe\Alignet\Model\ClientFactory $clientFactory,
 		\Magento\Framework\Controller\Result\ForwardFactory $resultForwardFactory,
-		\Dfe\CrPayme\Logger\Logger $logger
+		\Dfe\Alignet\Logger\Logger $logger
 	) {
 		parent::__construct($context);
 		$this->context = $context;
@@ -44,7 +44,7 @@ class Notify extends \Magento\Framework\App\Action\Action {
 	function execute()
 	{
 		/**
-		 * @var $client \Dfe\CrPayme\Model\Client
+		 * @var $client \Dfe\Alignet\Model\Client
 		 */
 		$request = $this->context->getRequest();
 		try {

@@ -3,12 +3,12 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Order;
+namespace Dfe\Alignet\Model\Order;
 
 class Validator
 {
     /**
-     * @var \Dfe\CrPayme\Model\ResourceModel\Transaction
+     * @var \Dfe\Alignet\Model\ResourceModel\Transaction
      */
     protected $transactionResource;
 
@@ -18,7 +18,7 @@ class Validator
     protected $customerSession;
 
     function __construct(
-        \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource,
+        \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource,
         \Magento\Customer\Model\Session $customerSession
     ) {
         $this->transactionResource = $transactionResource;
@@ -40,7 +40,7 @@ class Validator
      */
     function validatePaymentMethod(\Magento\Sales\Model\Order $order)
     {
-        return $order->getPayment()->getMethod() === \Dfe\CrPayme\Model\Paymecheckout::CODE;
+        return $order->getPayment()->getMethod() === \Dfe\Alignet\Model\Paymecheckout::CODE;
     }
 
     /**

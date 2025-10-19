@@ -1,10 +1,10 @@
 <?php
-namespace Dfe\CrPayme\Model\Client;
+namespace Dfe\Alignet\Model\Client;
 use Magento\Framework\Exception\LocalizedException;
 /**
  * 2020-12-09
- * @see \Dfe\CrPayme\Model\Client\Classic\Order
- * @see \Dfe\CrPayme\Model\Client\Rest\Order
+ * @see \Dfe\Alignet\Model\Client\Classic\Order
+ * @see \Dfe\Alignet\Model\Client\Rest\Order
  */
 interface OrderInterface {
 	/**
@@ -34,7 +34,7 @@ interface OrderInterface {
 	/**
 	 * Returns false on fail or array with the following keys on success: orderId, redirectUri, extOrderId
 	 * 2020-12-09
-	 * @see \Dfe\CrPayme\Model\Client\Classic\Order::create()
+	 * @see \Dfe\Alignet\Model\Client\Classic\Order::create()
 	 * @param array $data
 	 * @return array|false
 	 */
@@ -74,8 +74,8 @@ interface OrderInterface {
 
 	/**
 	 * 2020-12-09
-	 * @see \Dfe\CrPayme\Model\Client\Classic\Order::getDataForOrderCreate()
-	 * @see \Dfe\CrPayme\Model\Client\Rest\Order::getDataForOrderCreate
+	 * @see \Dfe\Alignet\Model\Client\Classic\Order::getDataForOrderCreate()
+	 * @see \Dfe\Alignet\Model\Client\Rest\Order::getDataForOrderCreate
 	 * @param \Magento\Sales\Model\Order $order
 	 * @return array
 	 */

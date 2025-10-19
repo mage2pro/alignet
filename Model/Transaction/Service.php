@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Transaction;
+namespace Dfe\Alignet\Model\Transaction;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
@@ -16,17 +16,17 @@ class Service
     protected $transactionRepository;
 
     /**
-     * @var \Dfe\CrPayme\Model\ResourceModel\Transaction
+     * @var \Dfe\Alignet\Model\ResourceModel\Transaction
      */
     protected $transactionResource;
 
     /**
      * @param \Magento\Sales\Api\TransactionRepositoryInterface $transactionRepository
-     * @param \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource
+     * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
      */
     function __construct(
         \Magento\Sales\Api\TransactionRepositoryInterface $transactionRepository,
-        \Dfe\CrPayme\Model\ResourceModel\Transaction $transactionResource
+        \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
     ) {
         $this->transactionRepository = $transactionRepository;
         $this->transactionResource = $transactionResource;

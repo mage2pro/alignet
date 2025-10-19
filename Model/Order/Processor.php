@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Order;
+namespace Dfe\Alignet\Model\Order;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
@@ -11,22 +11,22 @@ use Magento\Framework\Phrase;
 class Processor
 {
     /**
-     * @var \Dfe\CrPayme\Model\Order
+     * @var \Dfe\Alignet\Model\Order
      */
     protected $orderHelper;
 
     /**
-     * @var \Dfe\CrPayme\Model\Transaction\Service
+     * @var \Dfe\Alignet\Model\Transaction\Service
      */
     protected $transactionService;
 
     /**
-     * @param \Dfe\CrPayme\Model\Order $orderHelper
-     * @param \Dfe\CrPayme\Model\Transaction\Service $transactionService
+     * @param \Dfe\Alignet\Model\Order $orderHelper
+     * @param \Dfe\Alignet\Model\Transaction\Service $transactionService
      */
     function __construct(
-        \Dfe\CrPayme\Model\Order $orderHelper,
-        \Dfe\CrPayme\Model\Transaction\Service $transactionService
+        \Dfe\Alignet\Model\Order $orderHelper,
+        \Dfe\Alignet\Model\Transaction\Service $transactionService
     ) {
         $this->orderHelper = $orderHelper;
         $this->transactionService = $transactionService;
@@ -91,7 +91,7 @@ class Processor
 
     /**
      * @param string $paymecheckoutOrderId
-     * @return \Dfe\CrPayme\Model\Sales\Order
+     * @return \Dfe\Alignet\Model\Sales\Order
      * @throws LocalizedException
      */
     protected function loadOrderByPayuplOrderId($paymecheckoutOrderId)

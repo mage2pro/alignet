@@ -3,7 +3,7 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\MethodCaller;
+namespace Dfe\Alignet\Model\Client\MethodCaller;
 
 use Magento\Framework\Exception\LocalizedException;
 

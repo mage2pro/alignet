@@ -3,13 +3,13 @@
  *
  */
 
-namespace Dfe\CrPayme\Model\Client\Classic;
+namespace Dfe\Alignet\Model\Client\Classic;
 
-class MethodCaller extends \Dfe\CrPayme\Model\Client\MethodCaller
+class MethodCaller extends \Dfe\Alignet\Model\Client\MethodCaller
 {
     function __construct(
         MethodCaller\Raw $rawMethod,
-        \Dfe\CrPayme\Logger\Logger $logger
+        \Dfe\Alignet\Logger\Logger $logger
     ) {
         parent::__construct(
             $rawMethod,

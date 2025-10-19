@@ -1,5 +1,5 @@
 <?php
-namespace Dfe\CrPayme\Block\Adminhtml\Order\View;
+namespace Dfe\Alignet\Block\Adminhtml\Order\View;
 class Orderdetail extends \Magento\Backend\Block\Template {
 	function getResponse() {
 		$data = [];
