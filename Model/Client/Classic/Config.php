@@ -102,15 +102,13 @@ class Config implements ConfigInterface
     }
 
     /**
+	 * @override
+	 * @see \Dfe\Alignet\Model\Client\ConfigInterface::setConfig(
      * @return true
      * @throws LocalizedException
      */
     function setConfig()
     {
-
-
-          
-
         $this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
        $this->payme_esquema = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_esquema', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
         $this->payme_tipomodal = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_modal_type', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);

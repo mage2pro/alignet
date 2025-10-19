@@ -27,6 +27,8 @@ class Config implements ConfigInterface
     }
 
     /**
+	 * @override
+	 * @see \Dfe\Alignet\Model\Client\ConfigInterface::setConfig()
      * @return bool
      * @throws LocalizedException
      */
