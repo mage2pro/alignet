@@ -98,9 +98,9 @@ class Client {
 		}
 		$result = $this->orderHelper->statusUpdate($data);
 		if (!$result) {
-			throw new LocalizedException(
-				new Phrase('There was a problem while processing order status update request.')
-			);
+			throw new LocalizedException(new Phrase(
+				'There was a problem while processing order status update request.'
+			));
 		}
 		return true;
 	}
