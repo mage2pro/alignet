@@ -38,8 +38,7 @@ class Client {
 	 * @return array (keys: orderId, redirectUri, extOrderId)
 	 * @throws LocalizedException
 	 */
-	final function orderCreate(array $data = [])
-	{
+	final function orderCreate(array $data = []) {
 		if (!$this->orderHelper->validateCreate($data)) {
 			throw new LocalizedException(new Phrase('Order request data array is invalid.'));
 		}
