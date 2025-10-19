@@ -47,7 +47,9 @@ class Client {
 
 		$result = $this->orderHelper->create($data);
 		if (!$result) {
-			throw new LocalizedException(new Phrase('There was a problem while processing order create request.'));
+			throw new LocalizedException(new Phrase(
+				'There was a problem while processing order create request.'
+			));
 		}
 		return $result;
 	}
