@@ -238,6 +238,8 @@ class Config implements ConfigInterface
     }
 
     /**
+	 * @override
+	 * @see \Dfe\Alignet\Model\Client\ConfigInterface::getConfig()
      * @param string|null $key
      * @return string|array
      */
