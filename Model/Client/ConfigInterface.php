@@ -7,5 +7,9 @@ namespace Dfe\Alignet\Model\Client;
 interface ConfigInterface {
     function setConfig();
 
+	/**
+	 * @see \Dfe\Alignet\Model\Client\Classic\Config::getConfig()
+	 * @see \Dfe\Alignet\Model\Client\Rest\Config::getConfig()
+	 */
     function getConfig($key);
 }
