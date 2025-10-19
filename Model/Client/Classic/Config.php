@@ -1,12 +1,6 @@
 <?php
-/**
- *
- */
-
 namespace Dfe\Alignet\Model\Client\Classic;
-
 use Magento\Framework\Exception\LocalizedException;
-use Magento\Framework\Phrase;
 use Dfe\Alignet\Model\Client\ConfigInterface;
 use Dfe\Alignet\Model\Paymecheckout;
 
@@ -144,94 +138,46 @@ class Config implements ConfigInterface
                     break;
             }
         }
-
-
-      
         $payme_adquir_id = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_ADQUIR_ID, 'store');
         if ($payme_adquir_id) {
             $this->payme_adquir_id = $payme_adquir_id;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_adquir_id is empty.'));
         }
-
         $payme_comerce_id = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_COMERCE_ID, 'store');
         if ($payme_comerce_id) {
             $this->payme_comerce_id = $payme_comerce_id;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_comerce_id is empty.'));
         }
-
          $payme_vpos_id = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_VPOS_ID, 'store');
         if ($payme_vpos_id) {
             $this->payme_vpos_id = $payme_vpos_id;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_vpos_id is empty.'));
         }
-
-
         $payme_wallet_id = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_WALLET_ID, 'store');
         if ($payme_wallet_id) {
             $this->payme_wallet_id = $payme_wallet_id;
-        } 
-        else 
-        {
-             // throw new LocalizedException(new Phrase('payme_wallet_id is empty.'));
         }
-
-
-
-
-
         $payme_wallet_secret = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_WALLET_SECRET, 'store');
         if ($payme_wallet_secret) {
             $this->payme_wallet_secret = $payme_wallet_secret;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_wallet_secret is empty.'));
         }
-
-        //USDCONFIG
-
-
         $payme_adquir_id_dls = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_ADQUIR_ID_DLS, 'store');
         if ($payme_adquir_id_dls) {
             $this->payme_adquir_id_dls = $payme_adquir_id_dls;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_adquir_id_dls is empty.'));
         }
-
         $payme_comerce_id_dls = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_COMERCE_ID_DLS, 'store');
         if ($payme_comerce_id_dls) {
             $this->payme_comerce_id_dls = $payme_comerce_id_dls;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_comerce_id_DLS is empty.'));
         }
-
          $payme_vpos_id_dls = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_VPOS_ID_DLS, 'store');
         if ($payme_vpos_id_dls) {
             $this->payme_vpos_id_dls = $payme_vpos_id_dls;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_vpos_id_dls is empty.'));
         }
-
-
         $payme_wallet_id_dls = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_WALLET_ID_DLS, 'store');
         if ($payme_wallet_id_dls) {
             $this->payme_wallet_id_dls = $payme_wallet_id_dls;
-        } 
-        else 
-        {
-           // throw new LocalizedException(new Phrase('payme_wallet_secret is empty.'));
         }
-
-
         $payme_wallet_secret_dls = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_WALLET_SECRET_DLS, 'store');
         if ($payme_wallet_secret_dls) {
             $this->payme_wallet_secret_dls = $payme_wallet_secret_dls;
-        } else {
-            // throw new LocalizedException(new Phrase('payme_wallet_secret_dls is empty.'));
         }
-
-  
         return true;
     }
 
