@@ -1,14 +1,13 @@
 <?php
 namespace Dfe\Alignet\Model\Client;
+use Dfe\Alignet\Model\Client\Rest\Config;
+use Dfe\Alignet\Model\Client\Rest\Order;
 final class Rest extends \Dfe\Alignet\Model\Client {
 	/**
-	 * @param Rest\Config $configHelper
-	 * @param Rest\Order $orderHelper
+	 * @param Config $configHelper
+	 * @param Order $orderHelper
 	 */
-	function __construct(
-		Rest\Config $configHelper,
-		Rest\Order $orderHelper
-	) {
+	function __construct(Config $configHelper, Order $orderHelper) {
 		parent::__construct(
 			$configHelper,
 			$orderHelper
