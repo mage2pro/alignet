@@ -64,7 +64,9 @@ class Client {
 		}
 		$result = $this->orderHelper->retrieve($paymecheckoutOrderId);
 		if (!$result) {
-			throw new LocalizedException(new Phrase('There was a problem while processing order retrieve request.'));
+			throw new LocalizedException(new Phrase(
+				'There was a problem while processing order retrieve request.'
+			));
 		}
 		return $result;
 	}
