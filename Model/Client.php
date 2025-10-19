@@ -29,7 +29,6 @@ class Client {
 	function __construct(
 		Client\ConfigInterface $configHelper,
 		Client\OrderInterface $orderHelper
-
 	) {
 		$this->orderHelper = $orderHelper;
 		$this->configHelper = $configHelper;
