@@ -5,6 +5,7 @@ use Dfe\Alignet\Model\Client\Rest\MethodCaller;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
 # 2020-12-09
+/** @used-by \Dfe\Alignet\Model\Client\Rest */
 final class Order implements OrderInterface {
 	const STATUS_NEW        = 'NEW';
 	const STATUS_PENDING    = 'PENDING';

@@ -4,8 +4,8 @@ use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
 use Dfe\Alignet\Model\Client\ConfigInterface;
 use Dfe\Alignet\Model\Payupl;
-class Config implements ConfigInterface
-{
+/** @used-by \Dfe\Alignet\Model\Client\Rest */
+class Config implements ConfigInterface {
     /**
      * @var \Magento\Framework\App\Config\ScopeConfigInterface
      */
