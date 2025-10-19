@@ -1,12 +1,7 @@
 <?php
-/**
- *
- */
-
 namespace Dfe\Alignet\Model;
-
-class ClientFactory
-{
+use Dfe\Alignet\Model\Client\Classic;
+class ClientFactory {
     /**
      * @var \Magento\Framework\ObjectManagerInterface
      */
@@ -32,11 +27,5 @@ class ClientFactory
      * @param array $data
      * @return object
      */
-    function create(array $data = [])
-    {
-       
-        $class = Client\Classic::class;
-
-        return $this->objectManager->create($class, []);
-    }
+    function create(array $data = []) {return $this->objectManager->create(Classic::class, []);}
 }
