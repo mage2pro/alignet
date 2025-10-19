@@ -1,24 +1,11 @@
 {
-	"name": "mage2pro/cr-payme",
-	"description": "Paymecheckout integration for Magento 2",
-	"require": {
-		"php": ">=7.0.0",
-		"magento/module-checkout": ">=100",
-		"magento/module-payment": ">=100",
-		"magento/module-sales": ">=100",
-		"magento/framework": ">=100"
-	},
-	"type": "magento2-module",
-	"version": "3.0.3",
-	"autoload": {
-		"files": [
-			"registration.php"
-		],
-		"psr-4": {
-			"Dfe\\Alignet\\": ""
-		}
-	},
-	"authors": [
+	"name": "mage2pro/alignet"
+	,"version": "4.0.0"
+	,"description": "Alignet payment service integration with Magento 2"
+	,"type": "magento2-module"
+	,"homepage": "https://github.com/mage2pro/alignet"
+	,"license": "MIT"
+	,"authors": [
 		{
 			"name": "Dmitrii Fediuk",
 			"email": "admin@mage2.pro",
@@ -27,11 +14,23 @@
 		},
 		{
 			"name": "Alignet",
-			"homepage": "http://www.pay-me.com/"
+			"homepage": "https://www.alignet.com"
 		}
-	],
-	"license": [
-		"CC BY-SA 4.0",
-		"AFL-3.0"
+	]
+	,"require": {"mage2pro/core": ">=11.4.9"}
+	,"autoload": {"files": ["registration.php"], "psr-4": {"Dfe\\Alignet\\": ""}}
+	,"keywords": [
+		"3D Secure"
+		,"API"
+		,"Bank card"
+		,"Credit card"
+		,"eCommerce"
+		,"Magento"
+		,"Magento 2"
+		,"Magento extension"
+		,"Payment"
+		,"Payment integration"
+		,"Payment gateway"
+		,"Alignet"
 	]
 }
