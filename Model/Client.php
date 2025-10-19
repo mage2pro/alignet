@@ -130,7 +130,7 @@ class Client {
 	/**
 	 * @return Client\OrderInterface
 	 */
-	function getOrderHelper() {return $this->orderHelper}
+	function getOrderHelper() {return $this->orderHelper;}
 
 	/**
 	 * @return Client\ConfigInterface
