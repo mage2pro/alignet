@@ -114,7 +114,9 @@ class Client {
 	{
 		$result = $this->orderHelper->consumeNotification($request);
 		if (!$result) {
-			throw new LocalizedException(new Phrase('There was a problem while consuming order notification.'));
+			throw new LocalizedException(new Phrase(
+				'There was a problem while consuming order notification.'
+			));
 		}
 		return $result;
 	}
@@ -123,17 +125,10 @@ class Client {
 	/**
 	 * @return Client\OrderInterface
 	 */
-	function getOrderHelper()
-	{
-		return $this->orderHelper;
-	}
+	function getOrderHelper() {return $this->orderHelper}
 
 	/**
 	 * @return Client\ConfigInterface
 	 */
-	function getConfigHelper()
-	{
-		return $this->configHelper;
-	}
-
+	function getConfigHelper() {return $this->configHelper;}
 }
