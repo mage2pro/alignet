@@ -8,13 +8,10 @@ use Magento\Framework\Phrase;
  * @see \Dfe\Alignet\Model\Client\Rest
  */
 class Client {
-
 	/**
 	 * @var Client\ConfigInterface
 	 */
 	protected $configHelper;
-
-
 
 	/**
 	 * @var Client\OrderInterface
