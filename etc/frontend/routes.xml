@@ -8,7 +8,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
         <route id="paymecheckout" frontName="paymecheckout">
-            <module name="Dfe_CrPayme" />
+            <module name="Dfe_Alignet" />
         </route>
     </router>
 </config>

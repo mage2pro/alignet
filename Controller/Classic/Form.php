@@ -105,7 +105,7 @@ class Form extends \Magento\Framework\App\Action\Action {
 				'".$orderCreateData['purchaseVerification']."'
 			)";
 			$connection->query($sql);
-			$resultPage = $this->resultPageFactory->create(true, ['template' => 'Dfe_CrPayme::emptyroot.phtml']);
+			$resultPage = $this->resultPageFactory->create(true, ['template' => 'Dfe_Alignet::emptyroot.phtml']);
 			$resultPage->addHandle($resultPage->getDefaultLayoutHandle());
 			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setOrderCreateData($orderCreateData);
 			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setGatewayUrl(
