@@ -3,7 +3,7 @@ namespace Dfe\Alignet\Model\Client\Classic;
 use Magento\Framework\Exception\LocalizedException;
 use Dfe\Alignet\Model\Client\ConfigInterface;
 use Dfe\Alignet\Model\Paymecheckout;
-
+/** @used-by \Dfe\Alignet\Model\Client\Classic */
 class Config implements ConfigInterface
 {
     /**
