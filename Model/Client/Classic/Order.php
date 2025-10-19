@@ -1,6 +1,7 @@
 <?php
 namespace Dfe\Alignet\Model\Client\Classic;
 # 2020-12-09
+/** @used-by \Dfe\Alignet\Model\Client\Classic */
 class Order implements \Dfe\Alignet\Model\Client\OrderInterface {
 	const STATUS_PRE_NEW            = 0;
 	const STATUS_NEW                = 1;
