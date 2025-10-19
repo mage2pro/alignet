@@ -81,7 +81,9 @@ class Client {
 		}
 		$result = $this->orderHelper->cancel($paymecheckoutOrderId);
 		if (!$result) {
-			throw new LocalizedException(new Phrase('There was a problem while processing order cancel request.'));
+			throw new LocalizedException(new Phrase(
+				'There was a problem while processing order cancel request.'
+			));
 		}
 		return $result;
 	}
