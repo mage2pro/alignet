@@ -136,7 +136,15 @@
 					>
 						<label>ID Comercio</label>
 					</field>
-					<field id='payme_vpos_id' translate='label' type='text' sortOrder='3' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_vpos_id'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='3'
+						translate='label'
+						type='text'
+					>
 						<label>Clave V-POS2</label>
 						<!-- <validate>validate-no-empty</validate> -->
 					</field>
