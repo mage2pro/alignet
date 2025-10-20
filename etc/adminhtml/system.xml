@@ -192,7 +192,15 @@
 					>
 						<label>ID Adquirente</label>
 					</field>
-					<field id='payme_comerce_id_dls' translate='label' type='text' sortOrder='2' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_comerce_id_dls'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='2'
+						translate='label'
+						type='text'
+					>
 						<label>ID Comercio</label>
 					</field>
 					<field id='payme_vpos_id_dls' translate='label' type='text' sortOrder='3' showInDefault='1' showInWebsite='1' showInStore='1'>
