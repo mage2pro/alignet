@@ -172,12 +172,12 @@
 				</group>
 				<group
 					id='pos_parameters_dolares'
+					showInDefault='1'
+					showInStore='1'
+					showInWebsite='1'
+					sortOrder='3'
 					translate='label'
 					type='text'
-					sortOrder='3'
-					showInDefault='1'
-					showInWebsite='1'
-					showInStore='1'
 				>
 					<label>CONFIGURACIÓN - MONEDA DÓLARES</label>
 					<attribute type='expanded'>1</attribute>
