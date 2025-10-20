@@ -127,12 +127,12 @@
 					</field>
 					<field
 						id='payme_comerce_id'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='2'
 						translate='label'
 						type='text'
-						sortOrder='2'
-						showInDefault='1'
-						showInWebsite='1'
-						showInStore='1'
 					>
 						<label>ID Comercio</label>
 					</field>
