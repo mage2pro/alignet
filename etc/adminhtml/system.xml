@@ -181,7 +181,15 @@
 				>
 					<label>CONFIGURACIÓN - MONEDA DÓLARES</label>
 					<attribute type='expanded'>1</attribute>
-					<field id='payme_adquir_id_dls' translate='label' type='text' sortOrder='1' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_adquir_id_dls'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='1'
+						translate='label'
+						type='text'
+					>
 						<label>ID Adquirente</label>
 					</field>
 					<field id='payme_comerce_id_dls' translate='label' type='text' sortOrder='2' showInDefault='1' showInWebsite='1' showInStore='1'>
