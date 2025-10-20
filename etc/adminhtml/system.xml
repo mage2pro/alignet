@@ -5,7 +5,15 @@
 >
 	<system>
 		<section id='payment'>
-			<group id='payme_gateway' translate='label' type='text' sortOrder='201' showInDefault='1' showInWebsite='1' showInStore='1'>
+			<group
+				id='payme_gateway'
+				showInDefault='1'
+				showInStore='1'
+				showInWebsite='1'
+				sortOrder='201'
+				translate='label'
+				type='text'
+			>
 				<label>Pay-me Checkout</label>
 				<comment><![CDATA[Vende en línea con la pasarela de pagos Pay-me. Ofrece una buena experiencia de compra a tus clientes, acepta diferentes medios de pagos y haz que tu negocio crezca.]]></comment>
 				<group id='main_parameters' translate='label' type='text' sortOrder='1' showInDefault='1' showInWebsite='1' showInStore='1'>
