@@ -124,11 +124,17 @@
 						showInStore='1'
 					>
 						<label>ID Adquirente</label>
-						<!-- <validate>validate-no-empty</validate> -->
 					</field>
-					<field id='payme_comerce_id' translate='label' type='text' sortOrder='2' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_comerce_id'
+						translate='label'
+						type='text'
+						sortOrder='2'
+						showInDefault='1'
+						showInWebsite='1'
+						showInStore='1'
+					>
 						<label>ID Comercio</label>
-						<!-- <validate>validate-no-empty</validate> -->
 					</field>
 					<field id='payme_vpos_id' translate='label' type='text' sortOrder='3' showInDefault='1' showInWebsite='1' showInStore='1'>
 						<label>Clave V-POS2</label>
