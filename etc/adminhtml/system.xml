@@ -63,7 +63,15 @@
 						<label>Ambiente</label>
 						<source_model>Dfe\Alignet\Model\System\Config\Source\Options\Ambiente</source_model>
 					</field>
-					<field id='payme_esquema' translate='label' type='select' sortOrder='2' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_esquema'
+						translate='label'
+						type='select'
+						sortOrder='2'
+						showInDefault='1'
+						showInWebsite='1'
+						showInStore='1'
+					>
 						<label>Esquema de Integración</label>
 						<source_model>Dfe\Alignet\Model\System\Config\Source\Options\Esquema</source_model>
 					</field>
