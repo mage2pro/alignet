@@ -27,7 +27,15 @@
 				>
 					<label> CONFIGURACIÓN GENERAL</label>
 					<attribute type='expanded'>1</attribute>
-					<field id='payme_enable' translate='label' type='select' sortOrder='1' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_enable'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='1'
+						translate='label'
+						type='select'
+					>
 						<label>Activar Plugin?</label>
 						<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 					</field>
