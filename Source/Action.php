@@ -1,17 +1,5 @@
 <?php
-/**
- * SquareUp
- *
- * Action Source Model
- *
- * @category    Payme
- * @package     Payme
- * @copyright   2019
- *
- */
-
-namespace Dfe\Alignet\Model\System\Config\Source\Options;
-
+namespace Dfe\Alignet\Source;
 use Magento\Framework\Option\ArrayInterface;
 use Magento\Payment\Model\Method\AbstractMethod;
 

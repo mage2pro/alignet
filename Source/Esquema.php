@@ -10,15 +10,15 @@
  *
  */
 
-namespace Dfe\Alignet\Model\System\Config\Source\Options;
+namespace Dfe\Alignet\Source;
 
 use Magento\Framework\Option\ArrayInterface;
 use Magento\Payment\Model\Method\AbstractMethod;
 
 /**
- * Class Ambiente
+ * Class Esquema
  */
-class Ambiente implements ArrayInterface
+class Esquema implements ArrayInterface
 {
     /**
      * To option array
@@ -30,12 +30,12 @@ class Ambiente implements ArrayInterface
         return [
             [
                 'value' => '0',
-                'label' => 'Integracion'
+                'label' => 'Redirect'
             ],
-            [
-                'value' => '1',
-                'label' => 'Producción'
-            ]
+            // [
+            //     'value' => '1',
+            //     'label' => 'Modal'
+            // ]
         ];
     }
 }

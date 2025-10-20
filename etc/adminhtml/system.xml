@@ -61,7 +61,7 @@
 						   type='select'
 					   >
 						<label>Ambiente</label>
-						<source_model>Dfe\Alignet\Model\System\Config\Source\Options\Ambiente</source_model>
+						<source_model>Dfe\Alignet\Source\Ambiente</source_model>
 					</field>
 					<field
 						id='payme_esquema'
@@ -73,7 +73,7 @@
 						type='select'
 					>
 						<label>Esquema de Integración</label>
-						<source_model>Dfe\Alignet\Model\System\Config\Source\Options\Esquema</source_model>
+						<source_model>Dfe\Alignet\Source\Esquema</source_model>
 					</field>
 					<field
 						id='payme_modal_type'
@@ -85,7 +85,7 @@
 						type='select'
 					>
 						<label>Diseño de Modal</label>
-						<source_model>Dfe\Alignet\Model\System\Config\Source\Options\Action</source_model>
+						<source_model>Dfe\Alignet\Source\Action</source_model>
 						<depends>
 							<field id='*/*/main_parameters/payme_esquema'>1</field>
 						</depends>
