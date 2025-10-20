@@ -158,7 +158,15 @@
 					>
 						<label>ID Wallet</label>
 					</field>
-					<field id='payme_wallet_secret' translate='label' type='text' sortOrder='4' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_wallet_secret'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='4'
+						translate='label'
+						type='text'
+					>
 						<label>Clave Wallet</label>
 					</field>
 				</group>
