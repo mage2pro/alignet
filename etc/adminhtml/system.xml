@@ -16,7 +16,15 @@
 			>
 				<label>Pay-me Checkout</label>
 				<comment><![CDATA[Vende en línea con la pasarela de pagos Pay-me. Ofrece una buena experiencia de compra a tus clientes, acepta diferentes medios de pagos y haz que tu negocio crezca.]]></comment>
-				<group id='main_parameters' translate='label' type='text' sortOrder='1' showInDefault='1' showInWebsite='1' showInStore='1'>
+				<group
+					id='main_parameters'
+					showInDefault='1'
+					showInStore='1'
+					showInWebsite='1'
+					sortOrder='1'
+					translate='label'
+					type='text'
+				>
 					<label> CONFIGURACIÓN GENERAL</label>
 					<attribute type='expanded'>1</attribute>
 					<field id='payme_enable' translate='label' type='select' sortOrder='1' showInDefault='1' showInWebsite='1' showInStore='1'>
