@@ -214,7 +214,15 @@
 					>
 						<label>Clave V-POS2</label>
 					</field>
-					<field id='payme_wallet_id_dls' translate='label' type='text' sortOrder='4' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_wallet_id_dls'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='4'
+						translate='label'
+						type='text'
+					>
 						<label>ID Wallet</label>
 					</field>
 					<field id='payme_wallet_secret_dls' translate='label' type='text' sortOrder='4' showInDefault='1' showInWebsite='1' showInStore='1'>
