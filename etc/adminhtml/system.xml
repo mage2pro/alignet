@@ -75,7 +75,15 @@
 						<label>Esquema de Integración</label>
 						<source_model>Dfe\Alignet\Model\System\Config\Source\Options\Esquema</source_model>
 					</field>
-					<field id='payme_modal_type' translate='label' type='select' sortOrder='2' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_modal_type'
+						translate='label'
+						type='select'
+						sortOrder='2'
+						showInDefault='1'
+						showInWebsite='1'
+						showInStore='1'
+					>
 						<label>Diseño de Modal</label>
 						<source_model>Dfe\Alignet\Model\System\Config\Source\Options\Action</source_model>
 						<depends>
