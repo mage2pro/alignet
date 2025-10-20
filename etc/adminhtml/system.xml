@@ -92,12 +92,12 @@
 					</field>
 					  <field
 						  id='callbackurl'
+						  showInDefault='1'
+						  showInStore='1'
+						  showInWebsite='1'
+						  sortOrder='6'
 						  translate='label'
 						  type='link'
-						  sortOrder='6'
-						  showInDefault='1'
-						  showInWebsite='1'
-						  showInStore='1'
 					  >
 						<label>Url de Respuesta</label>
 						<validate>validate-no-empty</validate>
