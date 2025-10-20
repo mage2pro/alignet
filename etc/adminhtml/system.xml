@@ -114,7 +114,15 @@
 				>
 					<label>CONFIGURACIÓN - MONEDA LOCAL</label>
 					<attribute type='expanded'>1</attribute>
-					<field id='payme_adquir_id' translate='label' type='text' sortOrder='1' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_adquir_id'
+						translate='label'
+						type='text'
+						sortOrder='1'
+						showInDefault='1'
+						showInWebsite='1'
+						showInStore='1'
+					>
 						<label>ID Adquirente</label>
 						<!-- <validate>validate-no-empty</validate> -->
 					</field>
