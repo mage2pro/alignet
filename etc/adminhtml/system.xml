@@ -170,7 +170,15 @@
 						<label>Clave Wallet</label>
 					</field>
 				</group>
-				<group id='pos_parameters_dolares' translate='label' type='text' sortOrder='3'  showInDefault='1' showInWebsite='1' showInStore='1'>
+				<group
+					id='pos_parameters_dolares'
+					translate='label'
+					type='text'
+					sortOrder='3'
+					showInDefault='1'
+					showInWebsite='1'
+					showInStore='1'
+				>
 					<label>CONFIGURACIÓN - MONEDA DÓLARES</label>
 					<attribute type='expanded'>1</attribute>
 					<field id='payme_adquir_id_dls' translate='label' type='text' sortOrder='1' showInDefault='1' showInWebsite='1' showInStore='1'>
