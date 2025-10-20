@@ -146,9 +146,16 @@
 						type='text'
 					>
 						<label>Clave V-POS2</label>
-						<!-- <validate>validate-no-empty</validate> -->
 					</field>
-					<field id='payme_wallet_id' translate='label' type='text' sortOrder='4' showInDefault='1' showInWebsite='1' showInStore='1'>
+					<field
+						id='payme_wallet_id'
+						showInDefault='1'
+						showInStore='1'
+						showInWebsite='1'
+						sortOrder='4'
+						translate='label'
+						type='text'
+					>
 						<label>ID Wallet</label>
 					</field>
 					<field id='payme_wallet_secret' translate='label' type='text' sortOrder='4' showInDefault='1' showInWebsite='1' showInStore='1'>
