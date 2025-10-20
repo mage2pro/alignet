@@ -76,29 +76,14 @@
 						<source_model>Dfe\Alignet\Source\Esquema</source_model>
 					</field>
 					<field
-						id='payme_modal_type'
+						id='callbackurl'
 						showInDefault='1'
 						showInStore='1'
 						showInWebsite='1'
-						sortOrder='2'
+						sortOrder='6'
 						translate='label'
-						type='select'
+						type='link'
 					>
-						<label>Diseño de Modal</label>
-						<source_model>Dfe\Alignet\Source\Action</source_model>
-						<depends>
-							<field id='*/*/main_parameters/payme_esquema'>1</field>
-						</depends>
-					</field>
-					  <field
-						  id='callbackurl'
-						  showInDefault='1'
-						  showInStore='1'
-						  showInWebsite='1'
-						  sortOrder='6'
-						  translate='label'
-						  type='link'
-					  >
 						<label>Url de Respuesta</label>
 						<validate>validate-no-empty</validate>
 					</field>
