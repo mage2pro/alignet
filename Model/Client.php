@@ -5,7 +5,6 @@ use Magento\Framework\Phrase;
 /**
  * 2020-12-09
  * @see \Dfe\Alignet\Model\Client\Classic
- * @see \Dfe\Alignet\Model\Client\Rest
  */
 class Client {
 	/**
