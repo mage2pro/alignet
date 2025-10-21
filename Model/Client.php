@@ -74,8 +74,7 @@ class Client {
 	 * @return bool|\OpenPayU_Result
 	 * @throws LocalizedException
 	 */
-	function orderCancel($paymecheckoutOrderId)
-	{
+	function orderCancel($paymecheckoutOrderId) {
 		if (!$this->orderHelper->validateCancel($paymecheckoutOrderId)) {
 			throw new LocalizedException(new Phrase('ID of order to cancel is empty.'));
 		}
