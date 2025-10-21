@@ -83,7 +83,6 @@ class Config implements ConfigInterface
 	protected $payme_entorno;
 	protected $wsdomain;
 	protected $wsdl;
-	protected $payme_esquema;
 
 	/**
 	 * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
@@ -102,7 +101,6 @@ class Config implements ConfigInterface
 	 */
 	function setConfig() {
 		$this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
-	   $this->payme_esquema = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_esquema', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 		switch ($this->payme_entorno) {
 			case 0:
 				$this->wsdomain = 'https://integracion.alignetsac.com';
@@ -182,7 +180,6 @@ class Config implements ConfigInterface
 			'idCommerce_usd' => $this->payme_comerce_id_dls,
 			'key_usd' => $this->payme_vpos_id_dls,
 			'payme_entorno' => $this->payme_entorno,
-			'payme_esquema' => $this->payme_esquema,
 			'wsdomain' => $this->wsdomain
 			// 'payme_debug' => $this->payme_debug;
 		];
