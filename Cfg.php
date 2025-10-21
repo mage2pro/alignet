@@ -4,7 +4,7 @@ use Magento\Framework\Exception\LocalizedException;
 use Dfe\Alignet\Model\Paymecheckout;
 /** @used-by dfe_alignet_cfg() */
 final class Cfg {
-	function __construct() {
+	private function __construct() {
 		$this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 		switch ($this->payme_entorno) {
 			case 0:
@@ -147,4 +147,10 @@ final class Cfg {
 	private $payme_entorno;
 	private $wsdomain;
 	private $wsdl;
+
+	/**
+	 * 2025-10-22
+	 * @used-by dfe_alignet_cfg()
+	 */
+	static function s():self {static $r; return $r ? $r : $r = new self;}
 }
