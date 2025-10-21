@@ -25,13 +25,11 @@ class Notify extends \Magento\Framework\App\Action\Action {
 	 */
 	function __construct(
 		\Magento\Framework\App\Action\Context $context,
-		\Dfe\Alignet\Model\ClientFactory $clientFactory,
 		\Magento\Framework\Controller\Result\ForwardFactory $resultForwardFactory,
 		\Dfe\Alignet\Logger\Logger $logger
 	) {
 		parent::__construct($context);
 		$this->context = $context;
-		$this->clientFactory = $clientFactory;
 		$this->resultForwardFactory = $resultForwardFactory;
 		$this->logger = $logger;
 	}
