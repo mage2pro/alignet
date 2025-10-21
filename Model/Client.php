@@ -1,6 +1,6 @@
 <?php
 namespace Dfe\Alignet\Model;
-use Dfe\Alignet\Model\Client\Classic\Config as Cfg;
+use Dfe\Alignet\Cfg as Cfg;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
 /**

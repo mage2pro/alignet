@@ -8,7 +8,7 @@ final class DataGetter {
 	protected $extOrderIdHelper;
 
 	/**
-	 * @var \Dfe\Alignet\Model\Client\Classic\Config
+	 * @var \Dfe\Alignet\Cfg
 	 */
 	protected $configHelper;
 
@@ -66,13 +66,13 @@ final class DataGetter {
 
 	/**
 	 * @param \Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper
-	 * @param \Dfe\Alignet\Model\Client\Classic\Config $configHelper
+	 * @param \Dfe\Alignet\Cfg $configHelper
 	 * @param \Magento\Framework\Stdlib\DateTime\DateTime $dateTime
 	 * @param \Dfe\Alignet\Model\Session $session
 	 */
 	function __construct(
 		\Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper,
-		\Dfe\Alignet\Model\Client\Classic\Config $configHelper,
+		\Dfe\Alignet\Cfg $configHelper,
 		\Magento\Framework\Stdlib\DateTime\DateTime $dateTime,
 		\Dfe\Alignet\Model\Session $session
 	) {

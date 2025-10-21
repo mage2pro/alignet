@@ -11,15 +11,15 @@ use Magento\Framework\Phrase;
 class Notification
 {
     /**
-     * @var \Dfe\Alignet\Model\Client\Classic\Config
+     * @var \Dfe\Alignet\Cfg
      */
     protected $configHelper;
 
     /**
-     * @param \Dfe\Alignet\Model\Client\Classic\Config $configHelper
+     * @param \Dfe\Alignet\Cfg $configHelper
      */
     function __construct(
-        \Dfe\Alignet\Model\Client\Classic\Config $configHelper
+        \Dfe\Alignet\Cfg $configHelper
     ) {
         $this->configHelper = $configHelper;
     }
