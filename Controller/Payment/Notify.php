@@ -41,7 +41,7 @@ class Notify extends \Magento\Framework\App\Action\Action {
 		 */
 		$request = $this->context->getRequest();
 		try {
-			$client = $this->clientFactory->create();
+			$client = dfe_alignet_cl();
 			$response = $client->orderConsumeNotification($request);
 			$clientOrderHelper = $client->getOrderHelper();
 			if ($clientOrderHelper->canProcessNotification($response['referenceCode'])) {

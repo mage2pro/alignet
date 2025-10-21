@@ -7,6 +7,7 @@ use Dfe\Alignet\Model\Session as S;
  * "Delete `Dfe\Alignet\Model\ClientFactory`": https://github.com/mage2pro/alignet/issues/9
  * @used-by \Dfe\Alignet\Block\Payment\Info::_prepareSpecificInformation()
  * @used-by \Dfe\Alignet\Controller\Payment\End::getClientOrderHelper()
+ * @used-by \Dfe\Alignet\Controller\Payment\Notify::execute()
  */
 function dfe_alignet_cl() {return df_new_om(C::class);}
 
