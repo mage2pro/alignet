@@ -74,7 +74,6 @@ interface OrderInterface {
 	/**
 	 * 2020-12-09
 	 * @see \Dfe\Alignet\Model\Client\Classic\Order::getDataForOrderCreate()
-	 * @see \Dfe\Alignet\Model\Client\Rest\Order::getDataForOrderCreate
 	 * @param \Magento\Sales\Model\Order $order
 	 * @return array
 	 */
