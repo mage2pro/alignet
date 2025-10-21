@@ -1,5 +1,12 @@
 <?php
+use Dfe\Alignet\Model\Client\Classic as C;
 use Dfe\Alignet\Model\Session as S;
+
+/**
+ * 2025-10-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+ * "Delete `Dfe\Alignet\Model\ClientFactory`": https://github.com/mage2pro/alignet/issues/9
+ */
+function dfe_alignet_cl() {return df_new_om(C::class);}
 
 /**
  * 2025-09-23 Dmitrii Fediuk https://upwork.com/fl/mage2pro
