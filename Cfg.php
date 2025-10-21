@@ -3,15 +3,12 @@ namespace Dfe\Alignet;
 use Magento\Framework\Exception\LocalizedException;
 use Dfe\Alignet\Model\Paymecheckout;
 /** @used-by dfe_alignet_cfg() */
-final class Cfg
-{
+final class Cfg {
 	/**
 	 * @var \Magento\Framework\App\Config\ScopeConfigInterface
 	 */
 	protected $scopeConfig;
-
-
-
+	
 	/**
 	 * @var string
 	 */
