@@ -68,48 +68,12 @@ class End extends \Magento\Framework\App\Action\Action
     /**
      * @return \Magento\Framework\Controller\Result\Redirect
      */
-    function execute()
-    {
-        /**
-         * @var $clientOrderHelper \Dfe\Alignet\Model\Client\OrderInterface
-         */
-
-
-
-        // $resultRedirect = $this->resultRedirectFactory->create();
-        // $redirectUrl = '/';
-        // try {
-        //     if ($this->successValidator->isValid()) {
-        //         $redirectUrl = 'payme/payment/error';
-        //         $this->session->setLastOrderId(null);
-        //         $clientOrderHelper = $this->getClientOrderHelper();
-        //         if ($this->orderHelper->paymentSuccessCheck() && $clientOrderHelper->paymentSuccessCheck()) {
-        //             $redirectUrl = 'checkout/onepage/success';
-        //         }
-
-        //     } else {
-        //         if ($this->session->getLastOrderId()) {
-        //             $redirectUrl = 'payme/payment/repeat_error';
-        //             $clientOrderHelper = $this->getClientOrderHelper();
-        //             if ($this->orderHelper->paymentSuccessCheck() && $clientOrderHelper->paymentSuccessCheck()) {
-        //                 $redirectUrl = 'payme/payment/repeat_success';
-        //             }
-        //         }
-        //     }
-        // } catch (LocalizedException $e) {
-        //     $this->logger->critical($e);
-        // }
-        // $resultRedirect->setPath($redirectUrl);
-
-
+    function execute() {
         $resultPage = $this->resultPageFactory->create();
         $data = ['message' => 'Hello world!'];
         $this->session->setPostdata($data);
-        $postdata = $this->session->getPostdata();
         $resultPage->getLayout()->getBlock('paymecheckout.payment.end')->setPostdata($data);
         return $resultPage;
-        
-        // return $resultRedirect;
     }
 
     /**
