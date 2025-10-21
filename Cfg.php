@@ -162,7 +162,6 @@ final class Cfg {
 			'key_usd' => $this->payme_vpos_id_dls,
 			'payme_entorno' => $this->payme_entorno,
 			'wsdomain' => $this->wsdomain
-			// 'payme_debug' => $this->payme_debug;
 		];
 		if ($key) {
 			return $config[$key];
