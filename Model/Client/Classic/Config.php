@@ -96,6 +96,7 @@ class Config implements ConfigInterface
 	/**
 	 * @override
 	 * @see \Dfe\Alignet\Model\Client\ConfigInterface::setConfig()
+	 * @used-by \Dfe\Alignet\Model\Client::__construct()
 	 * @return true
 	 * @throws LocalizedException
 	 */
