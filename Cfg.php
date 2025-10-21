@@ -5,6 +5,34 @@ use Dfe\Alignet\Model\Paymecheckout;
 /** @used-by dfe_alignet_cfg() */
 final class Cfg {
 	/**
+	 * @param string|null $key
+	 * @return string|array
+	 */
+	function getConfig($key = null) {
+		 $config = [
+			'test' => null,
+			'url' => $this->url,
+			'wsdl' => $this->wsdl,
+			'idEntCommerce' => $this->payme_wallet_id,
+			'keywallet' => $this->payme_wallet_secret,
+			'acquirerId' => $this->payme_adquir_id,
+			'idCommerce' => $this->payme_comerce_id,
+			'key' => $this->payme_vpos_id,
+			'idEntCommerce_usd' => $this->payme_wallet_id_dls,
+			'keywallet_usd' => $this->payme_wallet_secret_dls,
+			'acquirerId_usd' => $this->payme_adquir_id_dls,
+			'idCommerce_usd' => $this->payme_comerce_id_dls,
+			'key_usd' => $this->payme_vpos_id_dls,
+			'payme_entorno' => $this->payme_entorno,
+			'wsdomain' => $this->wsdomain
+		];
+		if ($key) {
+			return $config[$key];
+		}
+		return $config;
+	}
+
+	/**
 	 * @used-by self::s()
 	 */
 	private function __construct() {
@@ -61,34 +89,6 @@ final class Cfg {
 		if ($payme_wallet_secret_dls) {
 			$this->payme_wallet_secret_dls = $payme_wallet_secret_dls;
 		}
-	}
-
-	/**
-	 * @param string|null $key
-	 * @return string|array
-	 */
-	function getConfig($key = null) {
-		 $config = [
-			'test' => null,
-			'url' => $this->url,
-			'wsdl' => $this->wsdl,
-			'idEntCommerce' => $this->payme_wallet_id,
-			'keywallet' => $this->payme_wallet_secret,
-			'acquirerId' => $this->payme_adquir_id,
-			'idCommerce' => $this->payme_comerce_id,
-			'key' => $this->payme_vpos_id,
-			'idEntCommerce_usd' => $this->payme_wallet_id_dls,
-			'keywallet_usd' => $this->payme_wallet_secret_dls,
-			'acquirerId_usd' => $this->payme_adquir_id_dls,
-			'idCommerce_usd' => $this->payme_comerce_id_dls,
-			'key_usd' => $this->payme_vpos_id_dls,
-			'payme_entorno' => $this->payme_entorno,
-			'wsdomain' => $this->wsdomain
-		];
-		if ($key) {
-			return $config[$key];
-		}
-		return $config;
 	}
 
 	/**
