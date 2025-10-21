@@ -115,8 +115,5 @@ class End extends \Magento\Framework\App\Action\Action
     /**
      * @return \Dfe\Alignet\Model\Client\OrderInterface
      */
-    protected function getClientOrderHelper()
-    {
-        return $this->clientFactory->create()->getOrderHelper();
-    }
+    protected function getClientOrderHelper() {return dfe_alignet_cl()->getOrderHelper();}
 }
