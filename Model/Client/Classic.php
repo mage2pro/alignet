@@ -2,7 +2,7 @@
 namespace Dfe\Alignet\Model\Client;
 use Dfe\Alignet\Model\Client\Classic\Config;
 use Dfe\Alignet\Model\Client\Classic\Order;
-/** @used-by \Dfe\Alignet\Model\ClientFactory::create() */
+/** @used-by dfe_alignet_cl() */
 final class Classic extends \Dfe\Alignet\Model\Client {
 	/**
 	 * @param Config $configHelper
