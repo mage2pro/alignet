@@ -128,7 +128,7 @@ final class Cfg {
 	 */
 	function getConfig($key = null) {
 		 $config = [
-			'test' => $this->test,
+			'test' => null,
 			'url' => $this->url,
 			'wsdl' => $this->wsdl,
 			'idEntCommerce' => $this->payme_wallet_id,
