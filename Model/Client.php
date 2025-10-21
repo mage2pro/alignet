@@ -18,16 +18,12 @@ class Client {
 	protected $orderHelper;
 
 	/**
-	 * @param Client\ConfigInterface $configHelper
 	 * @param Client\OrderInterface $orderHelper
 	 */
-	function __construct(
-		Client\ConfigInterface $configHelper,
-		Client\OrderInterface $orderHelper
-	) {
+	function __construct(Client\OrderInterface $orderHelper) {
 		$this->orderHelper = $orderHelper;
-		$this->configHelper = $configHelper;
-		$configHelper->setConfig();
+		$this->configHelper = dfe_alignet_cfg();
+		$this->configHelper->setConfig();
 	}
 
 	/**
