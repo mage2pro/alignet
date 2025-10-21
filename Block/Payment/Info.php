@@ -29,9 +29,6 @@ class Info extends \Magento\Payment\Block\Info {
 
 	protected function _prepareSpecificInformation($transport = null)
 	{
-		/**
-		 * @var $client \Dfe\Alignet\Model\Client
-		 */
 		$transport = parent::_prepareSpecificInformation($transport);
 		$orderId = $this->getInfo()->getParentId();
 		$status = $this->transactionResource->getLastStatusByOrderId($orderId);
