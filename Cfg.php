@@ -133,7 +133,7 @@ final class Cfg {
 			$this->payme_wallet_secret_dls = $payme_wallet_secret_dls;
 		}
 	}
-	
+
 	/**
 	 * @param string|null $key
 	 * @return string|array

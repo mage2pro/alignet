@@ -18,7 +18,9 @@ function dfe_alignet_cl() {return df_new_om(Cl::class);}
  * "Refactor `Dfe\Alignet\Model\Client\ConfigInterface` as it currently has only one implementation":
  * https://github.com/mage2pro/alignet/issues/6
  */
-function dfe_alignet_cfg() {return df_o(Cfg::class);}
+function dfe_alignet_cfg() {return dfcf(function() {
+	return new Cfg;
+});}
 
 /**
  * 2025-09-23 Dmitrii Fediuk https://upwork.com/fl/mage2pro
