@@ -92,8 +92,7 @@ class Client {
 	 * @return true
 	 * @throws LocalizedException
 	 */
-	function orderStatusUpdate(array $data = [])
-	{
+	function orderStatusUpdate(array $data = []) {
 		if (!$this->orderHelper->validateStatusUpdate($data)) {
 			throw new LocalizedException(new Phrase('Order status update request data array is invalid.'));
 		}
