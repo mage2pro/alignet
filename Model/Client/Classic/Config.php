@@ -153,8 +153,6 @@ final class Config
 	}
 
 	/**
-	 * @override
-	 * @see \Dfe\Alignet\Model\Client\ConfigInterface::getConfig()
 	 * @param string|null $key
 	 * @return string|array
 	 */

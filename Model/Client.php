@@ -124,7 +124,7 @@ class Client {
 
 	/**
 	 * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
-	 * @return Client\ConfigInterface
+	 * @return Cfg
 	 */
 	function getConfigHelper() {return $this->configHelper;}
 }
