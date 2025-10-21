@@ -32,39 +32,39 @@ final class Cfg {
 	  /**
 	 * @var string
 	 */
-	protected $payme_wallet_secret;
+	private $payme_wallet_secret;
 
-	protected $test;
+	private $test;
 
 	 /**
 	 * @var string
 	 */
-	protected $payme_adquir_id_dls;
+	private $payme_adquir_id_dls;
 
    /**
 	 * @var string
 	 */
-	protected $payme_comerce_id_dls;
+	private $payme_comerce_id_dls;
 
 	  /**
 	 * @var string
 	 */
-	protected $payme_vpos_id_dls;
+	private $payme_vpos_id_dls;
 
 	  /**
 	 * @var string
 	 */
-	protected $payme_wallet_id_dls;
+	private $payme_wallet_id_dls;
 
 	  /**
 	 * @var string
 	 */
-	protected $payme_wallet_secret_dls;
+	private $payme_wallet_secret_dls;
 
-	protected $payme_debug;
-	protected $payme_entorno;
-	protected $wsdomain;
-	protected $wsdl;
+	private $payme_debug;
+	private $payme_entorno;
+	private $wsdomain;
+	private $wsdl;
 
 	function __construct() {
 		$this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
