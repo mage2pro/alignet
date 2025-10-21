@@ -39,7 +39,7 @@
 						<label>Activar Plugin?</label>
 						<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 					</field>
-					 <field
+					<field
 						 id='payme_debug'
 						 showInDefault='1'
 						 showInStore='1'
@@ -51,7 +51,7 @@
 						<label>Activar Debug?</label>
 						<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 					</field>
-					   <field
+					<field
 						   id='payme_environment'
 						   showInDefault='1'
 						   showInStore='1'
@@ -62,18 +62,6 @@
 					   >
 						<label>Ambiente</label>
 						<source_model>Dfe\Alignet\Source\Ambiente</source_model>
-					</field>
-					<field
-						id='payme_esquema'
-						showInDefault='1'
-						showInStore='1'
-						showInWebsite='1'
-						sortOrder='2'
-						translate='label'
-						type='select'
-					>
-						<label>Esquema de Integración</label>
-						<source_model>Dfe\Alignet\Source\Esquema</source_model>
 					</field>
 					<field
 						id='callbackurl'
