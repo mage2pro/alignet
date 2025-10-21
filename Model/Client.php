@@ -24,7 +24,6 @@ class Client {
 	function __construct(Client\OrderInterface $orderHelper) {
 		$this->orderHelper = $orderHelper;
 		$this->configHelper = dfe_alignet_cfg();
-		$this->configHelper->setConfig();
 	}
 
 	/**
