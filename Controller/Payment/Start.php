@@ -26,13 +26,11 @@ class Start extends \Magento\Framework\App\Action\Action {
 	 */
 	function __construct(
 		\Magento\Framework\App\Action\Context $context,
-		\Dfe\Alignet\Model\ClientFactory $clientFactory,
 		\Dfe\Alignet\Model\Order $orderHelper,
 		\Dfe\Alignet\Model\Session $session,
 		\Dfe\Alignet\Logger\Logger $logger
 	) {
 		parent::__construct($context);
-		$this->clientFactory = $clientFactory;
 		$this->orderHelper = $orderHelper;
 		$this->session = $session;
 		$this->logger = $logger;
