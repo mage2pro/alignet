@@ -5,11 +5,6 @@ use Dfe\Alignet\Model\Paymecheckout;
 /** @used-by dfe_alignet_cfg() */
 final class Cfg {
 	/**
-	 * @var \Magento\Framework\App\Config\ScopeConfigInterface
-	 */
-	protected $scopeConfig;
-
-	/**
 	 * @var string
 	 */
 	protected $url;
@@ -72,12 +67,7 @@ final class Cfg {
 	protected $wsdomain;
 	protected $wsdl;
 
-	/**
-	 * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
-	 */
-	function __construct(
-		\Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
-	) {
+	function __construct() {
 		$this->scopeConfig = $scopeConfig;
 		$this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 		switch ($this->payme_entorno) {
