@@ -19,7 +19,6 @@ class Start extends \Magento\Framework\App\Action\Action {
 
 	/**
 	 * @param \Magento\Framework\App\Action\Context $context
-	 * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
 	 * @param \Dfe\Alignet\Model\Order $orderHelper
 	 * @param \Dfe\Alignet\Model\Session $session
 	 * @param \Dfe\Alignet\Logger\Logger $logger
