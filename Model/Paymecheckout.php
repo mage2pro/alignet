@@ -17,7 +17,6 @@ class Paymecheckout  extends AbstractMethod
     const XML_PATH_TEST       = 'payment/payme/test';
      const XML_PATH_PAYME_DEBUG      = 'payment/payme_gateway/main_parameters/payme_debug';
     const XML_PATH_PAYME_ENVIROMENT       = 'payment/payme_environment';
-    const XML_PATH_PAYME_ESQUEMA       = 'payment/payme_esquema';
     const XML_PATH_PAYME_ADQUIR_ID       = 'payment/payme_gateway/pos_parameters_soles/payme_adquir_id';
     const XML_PATH_PAYME_COMERCE_ID       = 'payment/payme_gateway/pos_parameters_soles/payme_comerce_id';
     const XML_PATH_PAYME_VPOS_ID     = 'payment/payme_gateway/pos_parameters_soles/payme_vpos_id';
