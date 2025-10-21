@@ -4,7 +4,6 @@ use Magento\Framework\Exception\LocalizedException;
 /**
  * 2020-12-09
  * @see \Dfe\Alignet\Model\Client\Classic\Order
- * @see \Dfe\Alignet\Model\Client\Rest\Order
  */
 interface OrderInterface {
 	/**
