@@ -53,7 +53,6 @@ class End extends \Magento\Framework\App\Action\Action
         \Magento\Checkout\Model\Session\SuccessValidator $successValidator,
         \Magento\Checkout\Model\Session $checkoutSession,
         \Dfe\Alignet\Model\Session $session,
-        \Dfe\Alignet\Model\ClientFactory $clientFactory,
         \Dfe\Alignet\Model\Order $orderHelper,
         \Dfe\Alignet\Logger\Logger $logger
     ) {
@@ -62,7 +61,6 @@ class End extends \Magento\Framework\App\Action\Action
         $this->successValidator = $successValidator;
         $this->checkoutSession = $checkoutSession;
         $this->session = $session;
-        $this->clientFactory = $clientFactory;
         $this->orderHelper = $orderHelper;
         $this->logger = $logger;
     }
