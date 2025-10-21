@@ -13,8 +13,7 @@ final class Cfg {
 	 * @var string
 	 */
 	protected $url;
-
-
+	
 	/**
 	 * @var string
 	 */
