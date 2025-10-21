@@ -3,11 +3,6 @@ namespace Dfe\Alignet\Controller\Payment;
 use Magento\Framework\Exception\LocalizedException;
 class Start extends \Magento\Framework\App\Action\Action {
 	/**
-	 * @var \Dfe\Alignet\Model\ClientFactory
-	 */
-	protected $clientFactory;
-
-	/**
 	 * @var \Dfe\Alignet\Model\Order
 	 */
 	protected $orderHelper;
