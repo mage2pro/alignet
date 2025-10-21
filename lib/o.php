@@ -1,5 +1,6 @@
 <?php
-use Dfe\Alignet\Model\Client\Classic as C;
+use Dfe\Alignet\Model\Client\Classic as Cl;
+use Dfe\Alignet\Model\Client\Classic\Config as Cfg;
 use Dfe\Alignet\Model\Session as S;
 
 /**
@@ -10,7 +11,14 @@ use Dfe\Alignet\Model\Session as S;
  * @used-by \Dfe\Alignet\Controller\Payment\Notify::execute()
  * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
  */
-function dfe_alignet_cl() {return df_new_om(C::class);}
+function dfe_alignet_cl() {return df_new_om(Cl::class);}
+
+/**
+ * 2025-10-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+ * "Refactor `Dfe\Alignet\Model\Client\ConfigInterface` as it currently has only one implementation":
+ * https://github.com/mage2pro/alignet/issues/6
+ */
+function dfe_alignet_cfg() {return df_o(Cfg::class);}
 
 /**
  * 2025-09-23 Dmitrii Fediuk https://upwork.com/fl/mage2pro
