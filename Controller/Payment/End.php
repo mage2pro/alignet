@@ -44,7 +44,6 @@ class End extends \Magento\Framework\App\Action\Action
      * @param \Magento\Checkout\Model\Session\SuccessValidator $successValidator
      * @param \Magento\Checkout\Model\Session $checkoutSession
      * @param \Dfe\Alignet\Model\Session $session
-     * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
      * @param \Dfe\Alignet\Model\Order $orderHelper
      * @param \Dfe\Alignet\Logger\Logger $logger
      */
