@@ -8,11 +8,6 @@ final class Cfg {
 	 * @var \Magento\Framework\App\Config\ScopeConfigInterface
 	 */
 	protected $scopeConfig;
-	
-	/**
-	 * @var string
-	 */
-	// protected $test;
 
 	/**
 	 * @var string
