@@ -25,11 +25,6 @@ class End extends \Magento\Framework\App\Action\Action
     protected $session;
 
     /**
-     * @var \Dfe\Alignet\Model\ClientFactory
-     */
-    protected $clientFactory;
-
-    /**
      * @var \Magento\Framework\App\Action\Context
      */
     protected $context;
