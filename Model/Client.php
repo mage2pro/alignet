@@ -56,8 +56,7 @@ class Client {
 	 * @return string Transaction status
 	 * @throws LocalizedException
 	 */
-	function orderRetrieve($paymecheckoutOrderId)
-	{
+	function orderRetrieve($paymecheckoutOrderId) {
 		if (!$this->orderHelper->validateRetrieve($paymecheckoutOrderId)) {
 			throw new LocalizedException(new Phrase('ID of order to retrieve is empty.'));
 		}
