@@ -147,7 +147,6 @@ final class Cfg {
 	 */
 	function getConfig($key = null) {
 		 $config = [
-
 			'test' => $this->test,
 			'url' => $this->url,
 			'wsdl' => $this->wsdl,
