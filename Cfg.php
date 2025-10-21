@@ -4,66 +4,6 @@ use Magento\Framework\Exception\LocalizedException;
 use Dfe\Alignet\Model\Paymecheckout;
 /** @used-by dfe_alignet_cfg() */
 final class Cfg {
-	/**
-	 * @var string
-	 */
-	private $url;
-
-	/**
-	 * @var string
-	 */
-	private $payme_adquir_id;
-
-   /**
-	 * @var string
-	 */
-	private $payme_comerce_id;
-
-	  /**
-	 * @var string
-	 */
-	private $payme_vpos_id;
-
-	  /**
-	 * @var string
-	 */
-	private $payme_wallet_id;
-
-	  /**
-	 * @var string
-	 */
-	private $payme_wallet_secret;
-
-	 /**
-	 * @var string
-	 */
-	private $payme_adquir_id_dls;
-
-   /**
-	 * @var string
-	 */
-	private $payme_comerce_id_dls;
-
-	  /**
-	 * @var string
-	 */
-	private $payme_vpos_id_dls;
-
-	  /**
-	 * @var string
-	 */
-	private $payme_wallet_id_dls;
-
-	  /**
-	 * @var string
-	 */
-	private $payme_wallet_secret_dls;
-
-	private $payme_debug;
-	private $payme_entorno;
-	private $wsdomain;
-	private $wsdl;
-
 	function __construct() {
 		$this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 		switch ($this->payme_entorno) {
@@ -147,4 +87,64 @@ final class Cfg {
 		}
 		return $config;
 	}
+
+	/**
+	 * @var string
+	 */
+	private $url;
+
+	/**
+	 * @var string
+	 */
+	private $payme_adquir_id;
+
+   /**
+	 * @var string
+	 */
+	private $payme_comerce_id;
+
+	  /**
+	 * @var string
+	 */
+	private $payme_vpos_id;
+
+	  /**
+	 * @var string
+	 */
+	private $payme_wallet_id;
+
+	  /**
+	 * @var string
+	 */
+	private $payme_wallet_secret;
+
+	 /**
+	 * @var string
+	 */
+	private $payme_adquir_id_dls;
+
+   /**
+	 * @var string
+	 */
+	private $payme_comerce_id_dls;
+
+	  /**
+	 * @var string
+	 */
+	private $payme_vpos_id_dls;
+
+	  /**
+	 * @var string
+	 */
+	private $payme_wallet_id_dls;
+
+	  /**
+	 * @var string
+	 */
+	private $payme_wallet_secret_dls;
+
+	private $payme_debug;
+	private $payme_entorno;
+	private $wsdomain;
+	private $wsdl;
 }
