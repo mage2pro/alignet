@@ -27,8 +27,7 @@ class Info extends \Magento\Payment\Block\Info {
 		parent::_prepareLayout();
 	}
 
-	protected function _prepareSpecificInformation($transport = null)
-	{
+	protected function _prepareSpecificInformation($transport = null) {
 		$transport = parent::_prepareSpecificInformation($transport);
 		$orderId = $this->getInfo()->getParentId();
 		$status = $this->transactionResource->getLastStatusByOrderId($orderId);
