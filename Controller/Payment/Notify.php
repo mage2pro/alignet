@@ -19,7 +19,6 @@ class Notify extends \Magento\Framework\App\Action\Action {
 
 	/**
 	 * @param \Magento\Framework\App\Action\Context $context
-	 * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
 	 * @param \Magento\Framework\Controller\Result\ForwardFactory $resultForwardFactory
 	 * @param \Dfe\Alignet\Logger\Logger $logger
 	 */
