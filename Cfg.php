@@ -34,8 +34,6 @@ final class Cfg {
 	 */
 	private $payme_wallet_secret;
 
-	private $test;
-
 	 /**
 	 * @var string
 	 */
