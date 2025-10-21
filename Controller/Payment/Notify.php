@@ -8,11 +8,6 @@ class Notify extends \Magento\Framework\App\Action\Action {
 	protected $context;
 
 	/**
-	 * @var \Dfe\Alignet\Model\ClientFactory
-	 */
-	protected $clientFactory;
-
-	/**
 	 * @var \Magento\Framework\Controller\Result\ForwardFactory
 	 */
 	protected $resultForwardFactory;
