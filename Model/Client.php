@@ -119,8 +119,7 @@ class Client {
 		}
 		return $result;
 	}
-
-
+	
 	/**
 	 * @return Client\OrderInterface
 	 */
