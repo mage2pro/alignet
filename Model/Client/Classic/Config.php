@@ -93,8 +93,6 @@ final class Config
 	}
 
 	/**
-	 * @override
-	 * @see \Dfe\Alignet\Model\Client\ConfigInterface::setConfig()
 	 * @used-by \Dfe\Alignet\Model\Client::__construct()
 	 * @throws LocalizedException
 	 */
