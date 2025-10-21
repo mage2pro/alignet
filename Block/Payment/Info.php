@@ -9,7 +9,6 @@ class Info extends \Magento\Payment\Block\Info {
 	/**
 	 * @param \Magento\Framework\View\Element\Template\Context $context
 	 * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
-	 * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
 	 * @param array $data
 	 */
 	function __construct(
