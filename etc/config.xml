@@ -12,6 +12,11 @@
                 <order_status_processing>processing</order_status_processing>
                 <title>Tarjeta Crédito/Débito</title>
             </paymecheckout>
+			<payme_gateway>
+				<main_parameters>
+					<payme_esquema>0</payme_esquema>
+				</main_parameters>
+			</payme_gateway>
         </payment>
     </default>
 </config>
