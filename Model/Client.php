@@ -119,13 +119,14 @@ class Client {
 		}
 		return $result;
 	}
-	
+
 	/**
 	 * @return Client\OrderInterface
 	 */
 	function getOrderHelper() {return $this->orderHelper;}
 
 	/**
+	 * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
 	 * @return Client\ConfigInterface
 	 */
 	function getConfigHelper() {return $this->configHelper;}
