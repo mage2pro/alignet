@@ -7,27 +7,27 @@ final class Cfg {
 	/**
 	 * @var string
 	 */
-	protected $url;
+	private $url;
 
 	/**
 	 * @var string
 	 */
-	protected $payme_adquir_id;
+	private $payme_adquir_id;
 
    /**
 	 * @var string
 	 */
-	protected $payme_comerce_id;
+	private $payme_comerce_id;
 
 	  /**
 	 * @var string
 	 */
-	protected $payme_vpos_id;
+	private $payme_vpos_id;
 
 	  /**
 	 * @var string
 	 */
-	protected $payme_wallet_id;
+	private $payme_wallet_id;
 
 	  /**
 	 * @var string
@@ -60,7 +60,6 @@ final class Cfg {
 	 * @var string
 	 */
 	protected $payme_wallet_secret_dls;
-
 
 	protected $payme_debug;
 	protected $payme_entorno;
