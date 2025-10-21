@@ -110,8 +110,7 @@ class Client {
 	 * @return array (keys: paymecheckoutOrderId, status, amount)
 	 * @throws LocalizedException
 	 */
-	function orderConsumeNotification(\Magento\Framework\App\Request\Http $request)
-	{
+	function orderConsumeNotification(\Magento\Framework\App\Request\Http $request) {
 		$result = $this->orderHelper->consumeNotification($request);
 		if (!$result) {
 			throw new LocalizedException(new Phrase(
