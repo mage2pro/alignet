@@ -1,7 +1,6 @@
 <?php
 namespace Dfe\Alignet\Source;
 use Magento\Framework\Option\ArrayInterface;
-use Magento\Payment\Model\Method\AbstractMethod;
 class Esquema implements ArrayInterface
 {
     /**
