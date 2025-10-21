@@ -1,6 +1,6 @@
 <?php
 use Dfe\Alignet\Model\Client\Classic as Cl;
-use Dfe\Alignet\Cfg as Cfg;
+use Dfe\Alignet\Cfg;
 use Dfe\Alignet\Model\Session as S;
 
 /**
