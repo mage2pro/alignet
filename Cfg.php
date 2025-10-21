@@ -13,7 +13,7 @@ final class Cfg {
 	 * @var string
 	 */
 	protected $url;
-	
+
 	/**
 	 * @var string
 	 */
@@ -40,9 +40,7 @@ final class Cfg {
 	protected $payme_wallet_secret;
 
 	protected $test;
-
-
-
+	
 	 /**
 	 * @var string
 	 */
