@@ -97,10 +97,9 @@ class Config implements ConfigInterface
 	 * @override
 	 * @see \Dfe\Alignet\Model\Client\ConfigInterface::setConfig()
 	 * @used-by \Dfe\Alignet\Model\Client::__construct()
-	 * @return true
 	 * @throws LocalizedException
 	 */
-	function setConfig() {
+	function setConfig():void {
 		$this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 		switch ($this->payme_entorno) {
 			case 0:
@@ -154,7 +153,6 @@ class Config implements ConfigInterface
 		if ($payme_wallet_secret_dls) {
 			$this->payme_wallet_secret_dls = $payme_wallet_secret_dls;
 		}
-		return true;
 	}
 
 	/**
