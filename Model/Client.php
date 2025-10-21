@@ -42,7 +42,6 @@ class Client {
 			throw new LocalizedException(new Phrase('Order request data array is invalid.'));
 		}
 		$data = $this->orderHelper->addSpecialDataToOrder($data);
-
 		$result = $this->orderHelper->create($data);
 		if (!$result) {
 			throw new LocalizedException(new Phrase(
