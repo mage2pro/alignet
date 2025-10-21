@@ -68,7 +68,6 @@ final class Cfg {
 	protected $wsdl;
 
 	function __construct() {
-		$this->scopeConfig = $scopeConfig;
 		$this->payme_entorno = $this->scopeConfig->getValue('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 		switch ($this->payme_entorno) {
 			case 0:
