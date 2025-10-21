@@ -40,7 +40,7 @@ final class Cfg {
 	protected $payme_wallet_secret;
 
 	protected $test;
-	
+
 	 /**
 	 * @var string
 	 */
@@ -145,8 +145,7 @@ final class Cfg {
 	 * @param string|null $key
 	 * @return string|array
 	 */
-	function getConfig($key = null)
-	{
+	function getConfig($key = null) {
 		 $config = [
 
 			'test' => $this->test,
