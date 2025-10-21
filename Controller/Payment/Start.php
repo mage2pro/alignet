@@ -52,7 +52,7 @@ class Start extends \Magento\Framework\App\Action\Action {
 			$order = $this->orderHelper->loadOrderById($orderId);
 			if ($this->orderHelper->canStartFirstPayment($order)) {
 				try {
-					$client = $this->clientFactory->create();
+					$client = dfe_alignet_cl();
 					$clientOrderHelper = $client->getOrderHelper();
 					$orderData = $clientOrderHelper->getDataForOrderCreate($order);
 					$result = $client->orderCreate($orderData);

@@ -8,6 +8,7 @@ use Dfe\Alignet\Model\Session as S;
  * @used-by \Dfe\Alignet\Block\Payment\Info::_prepareSpecificInformation()
  * @used-by \Dfe\Alignet\Controller\Payment\End::getClientOrderHelper()
  * @used-by \Dfe\Alignet\Controller\Payment\Notify::execute()
+ * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
  */
 function dfe_alignet_cl() {return df_new_om(C::class);}
 
