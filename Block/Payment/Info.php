@@ -7,11 +7,6 @@ class Info extends \Magento\Payment\Block\Info {
 	protected $transactionResource;
 
 	/**
-	 * @var \Dfe\Alignet\Model\ClientFactory
-	 */
-	protected $clientFactory;
-
-	/**
 	 * @param \Magento\Framework\View\Element\Template\Context $context
 	 * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
 	 * @param \Dfe\Alignet\Model\ClientFactory $clientFactory
