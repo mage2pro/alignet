@@ -8,13 +8,13 @@ final class Cfg {
 	 * @used-by self::urlStart()
 	 * @used-by vendor/mage2pro/alignet/view/frontend/templates/classic/form.phtml
 	 */
-	function url(string $p):string {return df_cc_path($this->urlBase(), $p);}
+	function url(string $p):string {return df_cc_path($this->urlBase(), 'VPOS2', $p);}
 
 	/**
 	 * 2025-10-22
 	 * @used-by vendor/mage2pro/alignet/view/frontend/templates/classic/form.phtml
 	 */
-	function urlStart():string {return $this->url('VPOS2/faces/pages/startPayme.xhtml');}
+	function urlStart():string {return $this->url('faces/pages/startPayme.xhtml');}
 
 	/**
 	 * 2025-10-22
