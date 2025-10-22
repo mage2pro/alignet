@@ -1,7 +1,6 @@
 <?php
 namespace Dfe\Alignet;
 use Df\Core\O;
-use Dfe\Alignet\Model\Paymecheckout;
 /** @used-by dfe_alignet_cfg() */
 final class Cfg {
 	/**
