@@ -35,7 +35,7 @@ final class Cfg {
 	 * @used-by self::s()
 	 */
 	private function __construct() {
-		$this->payme_entorno = df_cfg('payment/payme_gateway/main_parameters/payme_environment', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+		$this->payme_entorno = df_cfg('payment/payme_gateway/main_parameters/payme_environment');
 		switch ($this->payme_entorno) {
 			case 0:
 				$this->wsdomain = 'https://integracion.alignetsac.com';
