@@ -5,22 +5,15 @@ use Df\Core\O;
 final class Cfg {
 	/**
 	 * 2025-10-22
+	 * @used-by self::urlStart()
 	 * @used-by vendor/mage2pro/alignet/view/frontend/templates/classic/form.phtml
 	 */
 	function url(string $p):string {return df_cc_path($this->urlBase(), $p);}
-	/**
-	 * 2025-10-22
-	 * @used-by self::urlStart()
-	 * @used-by self::urlWalletWSDL()
-	 */
-	function urlBase():string {return $this->isProduction()
-		? 'https://vpayment.verifika.com' : 'https://integracion.alignetsac.com'
-	;}
 
 	/**
 	 * 2025-10-22
 	 */
-	function urlStart():string {return df_cc_path($this->urlBase(), 'VPOS2/faces/pages/startPayme.xhtml');}
+	function urlStart():string {return $this->url('VPOS2/faces/pages/startPayme.xhtml');}
 
 	/**
 	 * 2025-10-22
@@ -38,6 +31,15 @@ final class Cfg {
 	private function isProduction():bool {return dfc($this, function():bool {return !!df_cfg(
 		'payment/payme_gateway/main_parameters/payme_environment'
 	);});}
+
+	/**
+	 * 2025-10-22
+	 * @used-by self::urlWalletWSDL()
+	 * @used-by self::url()
+	 */
+	private function urlBase():string {return $this->isProduction()
+		? 'https://vpayment.verifika.com' : 'https://integracion.alignetsac.com'
+	;}
 
 	/**
 	 * @param string|null $key
