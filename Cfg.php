@@ -17,6 +17,7 @@ final class Cfg {
 
 	/**
 	 * 2025-10-22
+	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::userCodePayme()
 	 */
 	function urlWalletWSDL():string {return df_cc_path(
 		$this->isProduction() ? 'https://www.pay-me.pe' : $this->urlBase()
@@ -49,7 +50,6 @@ final class Cfg {
 		 $config = [
 			'test' => null,
 			'url' => $this->url,
-			'wsdl' => $this->wsdl,
 			'idEntCommerce' => $this->payme_wallet_id,
 			'keywallet' => $this->payme_wallet_secret,
 			'acquirerId' => $this->payme_adquir_id,
@@ -71,12 +71,6 @@ final class Cfg {
 	 * @used-by self::s()
 	 */
 	private function __construct() {
-		if ($this->isProduction()) {
-			$this->wsdl = "https://www.pay-me.pe/WALLETWS/services/WalletCommerce?wsdl";
-		}
-		else {
-			$this->wsdl = $this->wsdomain.'/WALLETWS/services/WalletCommerce?wsdl';
-		}
 		$this->url = "{$this->wsdomain}/VPOS2/faces/pages/startPayme.xhtml";
 		$this->payme_adquir_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_adquir_id');
 		$this->payme_comerce_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_comerce_id');
@@ -158,10 +152,6 @@ final class Cfg {
 	 * @var string
 	 */
 	private $payme_wallet_secret_dls;
-
-	private $payme_debug;
-	private $payme_entorno;
-	private $wsdl;
 
 	/**
 	 * 2025-10-22

@@ -23,10 +23,6 @@ final class DataGetter {
 	protected $session;
 
 
-
-	/**
-	 * @var \Dfe\Alignet\Model\Session
-	 */
 	protected $idEntCommerce;
 
 
@@ -48,12 +44,6 @@ final class DataGetter {
 	 * @var \Dfe\Alignet\Model\Session
 	 */
 	protected $key;
-
-
-	/**
-	 * @var \Dfe\Alignet\Model\Session
-	 */
-	protected $wsdl;
 
 	protected $modalVPOS2;
 
@@ -287,11 +277,11 @@ final class DataGetter {
 		if ($customerId = dfa($d, 'userCommerce')) { /** @var int|null $customerId */
 			$row = df_fetch_one('payme_usercode', '*', ['user_code' => $customerId, 'currency' => $this->currency_iso]);
 			if (!($r = dfa($row, 'userCodePayme'))
-				# 2021-05-13 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+				# 2021-05-13
 				# The line below can throw the error:
 				# «Couldn't load from 'https://www.pay-me.pe/WALLETWS/services/WalletCommerce?wsdl'»
 				# https://github.com/innomuebles/m2/issues/17#issuecomment-840054608
-				&& ($s = df_try(function() {return new \SoapClient($this->configHelper->getConfig('wsdl'));}))
+				&& ($s = df_try(function() {return new \SoapClient(dfe_alignet_cfg()->urlWalletWSDL());}))
 			) {/** @var \SoapClient $s */
 				try {
 					$res = $s->RegisterCardHolder([
