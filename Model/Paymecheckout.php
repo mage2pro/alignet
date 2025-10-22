@@ -17,7 +17,6 @@ class Paymecheckout  extends AbstractMethod
     const XML_PATH_TEST       = 'payment/payme/test';
      const XML_PATH_PAYME_DEBUG      = 'payment/payme_gateway/main_parameters/payme_debug';
     const XML_PATH_PAYME_ENVIROMENT       = 'payment/payme_environment';
-    const XML_PATH_PAYME_WALLET_ID       = 'payment/payme_gateway/pos_parameters_soles/payme_wallet_id';
     const XML_PATH_PAYME_WALLET_SECRET       = 'payment/payme_gateway/pos_parameters_soles/payme_wallet_secret';
     const XML_PATH_PAYME_ADQUIR_ID_DLS       = 'payment/payme_gateway/pos_parameters_dolares/payme_adquir_id_dls';
     const XML_PATH_PAYME_COMERCE_ID_DLS       = 'payment/payme_gateway/pos_parameters_dolares/payme_comerce_id_dls';
@@ -38,7 +37,7 @@ class Paymecheckout  extends AbstractMethod
 
     protected $_supportedCurrencyCodes = array('ARS','BRL','CLP','COP','MXN','PEN','USD');
     protected $urlBuilder;
-	
+
     function __construct(
         \Magento\Framework\Model\Context $context,
         \Magento\Framework\Registry $registry,
