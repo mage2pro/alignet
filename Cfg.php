@@ -52,7 +52,7 @@ final class Cfg {
 		if ($payme_adquir_id) {
 			$this->payme_adquir_id = $payme_adquir_id;
 		}
-		$payme_comerce_id = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_COMERCE_ID, 'store');
+		$payme_comerce_id = df_cfg(Paymecheckout::XML_PATH_PAYME_COMERCE_ID);
 		if ($payme_comerce_id) {
 			$this->payme_comerce_id = $payme_comerce_id;
 		}
