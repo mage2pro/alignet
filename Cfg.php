@@ -76,7 +76,7 @@ final class Cfg {
 		if ($payme_comerce_id_dls) {
 			$this->payme_comerce_id_dls = $payme_comerce_id_dls;
 		}
-		 $payme_vpos_id_dls = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_VPOS_ID_DLS, 'store');
+		 $payme_vpos_id_dls = df_cfg(Paymecheckout::XML_PATH_PAYME_VPOS_ID_DLS);
 		if ($payme_vpos_id_dls) {
 			$this->payme_vpos_id_dls = $payme_vpos_id_dls;
 		}
