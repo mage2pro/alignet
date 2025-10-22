@@ -35,7 +35,6 @@ class Form extends \Magento\Framework\App\Action\Action {
 		 * @var $resultPage \Magento\Framework\View\Result\Page
 		 */
 		$orderCreateData = $this->session->getOrderCreateData();
-		$paymeEntorno = $this->session->getPaymeEntorno();
 		$WsDomain = $this->session->getWsDomain();
 		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 		$resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
@@ -110,7 +109,6 @@ class Form extends \Magento\Framework\App\Action\Action {
 			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setGatewayUrl(
 				$this->session->getGatewayUrl()
 			);
-			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setPaymeEntorno($paymeEntorno);
 			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setWsDomain($WsDomain);
 			return $resultPage;
 		} else {
