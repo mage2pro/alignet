@@ -53,7 +53,7 @@ final class Cfg {
 		if ($payme_adquir_id) {
 			$this->payme_adquir_id = $payme_adquir_id;
 		}
-		$payme_comerce_id = df_cfg(Paymecheckout::XML_PATH_PAYME_COMERCE_ID);
+		$payme_comerce_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_comerce_id');
 		if ($payme_comerce_id) {
 			$this->payme_comerce_id = $payme_comerce_id;
 		}
