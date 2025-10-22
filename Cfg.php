@@ -80,7 +80,7 @@ final class Cfg {
 		if ($payme_vpos_id_dls) {
 			$this->payme_vpos_id_dls = $payme_vpos_id_dls;
 		}
-		$payme_wallet_id_dls = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_WALLET_ID_DLS, 'store');
+		$payme_wallet_id_dls = df_cfg(Paymecheckout::XML_PATH_PAYME_WALLET_ID_DLS);
 		if ($payme_wallet_id_dls) {
 			$this->payme_wallet_id_dls = $payme_wallet_id_dls;
 		}
