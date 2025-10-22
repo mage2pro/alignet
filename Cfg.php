@@ -5,11 +5,17 @@ use Df\Core\O;
 final class Cfg {
 	/**
 	 * 2025-10-22
+	 * @used-by self::urlStart()
 	 * @used-by self::urlWalletWSDL()
 	 */
 	function urlBase():string {return $this->isProduction()
 		? 'https://vpayment.verifika.com' : 'https://integracion.alignetsac.com'
 	;}
+
+	/**
+	 * 2025-10-22
+	 */
+	function urlStart():string {return df_cc_path($this->urlBase(), 'VPOS2/faces/pages/startPayme.xhtml');}
 
 	/**
 	 * 2025-10-22
