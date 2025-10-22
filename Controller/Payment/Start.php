@@ -66,7 +66,6 @@ class Start extends \Magento\Framework\App\Action\Action {
 					$configHelper = $client->getConfigHelper();
 
 					$this->session->setGatewayUrl($configHelper->getConfig('url'));
-					$this->session->setPaymeEntorno($configHelper->getConfig('payme_entorno'));
 					$this->session->setWsDomain($configHelper->getConfig('wsdomain'));
 
 					  $order->setState(\Magento\Sales\Model\Order::STATE_PENDING_PAYMENT, true)->save();
