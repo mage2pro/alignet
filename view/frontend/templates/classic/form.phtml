@@ -1,16 +1,17 @@
 <!-- 2025-10-19 Dmitrii Fediuk https://upwork.com/fl/mage2pro
 "Refactor the `Alignet_Paymecheckout` module": https://github.com/innomuebles/m2/issues/10 -->
+<?php
+use Dfe\Alignet\Cfg;
+$c = dfe_alignet_cfg(); /** @var Cfg $c */
+?>
 <link
-	href='<?= $this->getWsDomain(); ?>/VPOS2/css/modalcomercio.css'
+	href='<?= $c->url('VPOS2/css/modalcomercio.css') ?>'
 	id='alignet-modal-css'
 	media='all'
 	rel='stylesheet'
 	type='text/css'
 />
-<script
-	src='<?= $this->getWsDomain(); ?>/VPOS2/js/modalcomercio.js'
-	type='text/javascript'
-></script>
+<script src='<?= $c->url('VPOS2/js/modalcomercio.js') ?>' type='text/javascript'></script>
 <form 
 	action='<?= $this->getGatewayUrl() ?>'
 	class='alignet-form-vpos2'

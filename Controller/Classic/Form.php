@@ -35,7 +35,6 @@ class Form extends \Magento\Framework\App\Action\Action {
 		 * @var $resultPage \Magento\Framework\View\Result\Page
 		 */
 		$orderCreateData = $this->session->getOrderCreateData();
-		$WsDomain = $this->session->getWsDomain();
 		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 		$resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
 		$connection = $resource->getConnection();
@@ -109,7 +108,6 @@ class Form extends \Magento\Framework\App\Action\Action {
 			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setGatewayUrl(
 				$this->session->getGatewayUrl()
 			);
-			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setWsDomain($WsDomain);
 			return $resultPage;
 		} else {
 			$resultRedirect = $this->resultRedirectFactory->create();

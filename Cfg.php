@@ -5,6 +5,11 @@ use Df\Core\O;
 final class Cfg {
 	/**
 	 * 2025-10-22
+	 * @used-by vendor/mage2pro/alignet/view/frontend/templates/classic/form.phtml
+	 */
+	function url(string $p):string {return df_cc_path($this->urlBase(), $p);}
+	/**
+	 * 2025-10-22
 	 * @used-by self::urlStart()
 	 * @used-by self::urlWalletWSDL()
 	 */
@@ -52,8 +57,7 @@ final class Cfg {
 			'keywallet_usd' => $this->payme_wallet_secret_dls,
 			'acquirerId_usd' => $this->payme_adquir_id_dls,
 			'idCommerce_usd' => $this->payme_comerce_id_dls,
-			'key_usd' => $this->payme_vpos_id_dls,
-			'wsdomain' => $this->wsdomain
+			'key_usd' => $this->payme_vpos_id_dls
 		];
 		if ($key) {
 			return $config[$key];
@@ -66,11 +70,9 @@ final class Cfg {
 	 */
 	private function __construct() {
 		if ($this->isProduction()) {
-			$this->wsdomain = 'https://vpayment.verifika.com';
 			$this->wsdl = "https://www.pay-me.pe/WALLETWS/services/WalletCommerce?wsdl";
 		}
 		else {
-			$this->wsdomain = 'https://integracion.alignetsac.com';
 			$this->wsdl = $this->wsdomain.'/WALLETWS/services/WalletCommerce?wsdl';
 		}
 		$this->url = "{$this->wsdomain}/VPOS2/faces/pages/startPayme.xhtml";
@@ -157,7 +159,6 @@ final class Cfg {
 
 	private $payme_debug;
 	private $payme_entorno;
-	private $wsdomain;
 	private $wsdl;
 
 	/**

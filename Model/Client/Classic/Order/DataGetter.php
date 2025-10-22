@@ -55,8 +55,6 @@ final class DataGetter {
 	 */
 	protected $wsdl;
 
-	protected $wsdomain;
-
 	protected $modalVPOS2;
 
 	protected $tipoModal;
