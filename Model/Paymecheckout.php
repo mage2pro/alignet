@@ -1,16 +1,9 @@
 <?php
 namespace Dfe\Alignet\Model;
-
 use Magento\Payment\Model\Method\AbstractMethod;
+class Paymecheckout  extends AbstractMethod {
+	const CODE = 'paymecheckout';
 
-class Paymecheckout  extends AbstractMethod
-{
-      const CODE = 'paymecheckout';
-
-    /*
-     * Path of config variables in system.xml
-     */
-    const XML_PATH_MERCHANT_ID               = 'payment/payme/merchantId';
     const XML_PATH_ACCOUNT_ID           = 'payment/payme/accountId';
     const XML_PATH_API_KEY              = 'payment/payme/ApiKey';
     const XML_PATH_API_LOGIN       = 'payment/payme/ApiLogin';
