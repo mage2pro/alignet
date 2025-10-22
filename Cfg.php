@@ -1,5 +1,6 @@
 <?php
 namespace Dfe\Alignet;
+use Df\Core\O;
 use Dfe\Alignet\Model\Paymecheckout;
 /** @used-by dfe_alignet_cfg() */
 final class Cfg {
@@ -89,6 +90,12 @@ final class Cfg {
 			$this->payme_wallet_secret_dls = $payme_wallet_secret_dls;
 		}
 	}
+
+	/**
+	 * 2025-10-22
+	 * @var O
+	 */
+	private $_d;
 
 	/**
 	 * @var string
