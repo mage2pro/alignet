@@ -12,6 +12,7 @@ final class Cfg {
 
 	/**
 	 * 2025-10-22
+	 * @used-by vendor/mage2pro/alignet/view/frontend/templates/classic/form.phtml
 	 */
 	function urlStart():string {return $this->url('VPOS2/faces/pages/startPayme.xhtml');}
 

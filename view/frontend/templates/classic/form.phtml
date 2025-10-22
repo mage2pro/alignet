@@ -13,15 +13,21 @@ $c = dfe_alignet_cfg(); /** @var Cfg $c */
 />
 <script src='<?= $c->url('VPOS2/js/modalcomercio.js') ?>' type='text/javascript'></script>
 <form 
-	action='<?= $this->getGatewayUrl() ?>'
+	action='<?= $c->urlStart() ?>'
 	class='alignet-form-vpos2'
 	id='f1' 
 	method='POST' 
 	name='f1' 
 >
     <?php foreach ($this->getOrderCreateData() as $name => $value): ?>
-    <input type="hidden" name="<?= $name; ?>" value="<?= $value; ?>" />
+    	<input type="hidden" name="<?= $name; ?>" value="<?= $value; ?>" />
     <?php endforeach; ?>
-    <input type="button" id="btnmodal" style="display:none" onclick="<?= $this->getGatewayUrl(); ?>" value="Comprar">
+    <input
+		id="btnmodal"
+		onclick="<?= $c->urlStart(); ?>"
+		style="display:none"
+		type="button"
+		value="Comprar"
+	/>
 </form>
 <script>document.forms['f1'].submit();</script>
