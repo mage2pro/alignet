@@ -24,11 +24,6 @@ class Paymecheckout  extends AbstractMethod
     const XML_PATH_PAYME_VPOS_ID_DLS       = 'payment/payme_gateway/pos_parameters_dolares/payme_vpos_id_dls';
     const XML_PATH_PAYME_WALLET_ID_DLS       = 'payment/payme_gateway/pos_parameters_dolares/payme_wallet_id_dls';
     const XML_PATH_PAYME_WALLET_SECRET_DLS       = 'payment/payme_gateway/pos_parameters_dolares/payme_wallet_secret_dls';
-
-
-
-
-
     protected $_isGateway = true;
     protected $_canCapture = true;
     protected $_canCapturePartial = true;
@@ -43,8 +38,7 @@ class Paymecheckout  extends AbstractMethod
 
     protected $_supportedCurrencyCodes = array('ARS','BRL','CLP','COP','MXN','PEN','USD');
     protected $urlBuilder;
-
-
+	
     function __construct(
         \Magento\Framework\Model\Context $context,
         \Magento\Framework\Registry $registry,
