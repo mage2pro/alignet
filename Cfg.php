@@ -6,7 +6,7 @@ final class Cfg {
 	/**
 	 * 2025-10-22
 	 */
-	function isProduction():bool {return dfc($this, function():bool {return !!df_cfg(
+	private function isProduction():bool {return dfc($this, function():bool {return !!df_cfg(
 		'payment/payme_gateway/main_parameters/payme_environment'
 	);});}
 
