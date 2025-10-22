@@ -105,9 +105,6 @@ class Form extends \Magento\Framework\App\Action\Action {
 			$resultPage = $this->resultPageFactory->create(true, ['template' => 'Dfe_Alignet::emptyroot.phtml']);
 			$resultPage->addHandle($resultPage->getDefaultLayoutHandle());
 			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setOrderCreateData($orderCreateData);
-			$resultPage->getLayout()->getBlock('paymecheckout.classic.form')->setGatewayUrl(
-				$this->session->getGatewayUrl()
-			);
 			return $resultPage;
 		} else {
 			$resultRedirect = $this->resultRedirectFactory->create();
