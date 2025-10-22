@@ -5,6 +5,25 @@ use Df\Core\O;
 final class Cfg {
 	/**
 	 * 2025-10-22
+	 * @used-by self::urlWalletWSDL()
+	 */
+	function urlBase():string {return $this->isProduction()
+		? 'https://vpayment.verifika.com'
+		: 'https://integracion.alignetsac.com'
+	;}
+
+	/**
+	 * 2025-10-22
+	 */
+	function urlWalletWSDL():string {return df_cc_path(
+		$this->isProduction() ? 'https://www.pay-me.pe' : $this->urlBase()
+		,'WALLETWS/services/WalletCommerce?wsdl'
+	);}
+
+	/**
+	 * 2025-10-22
+	 * @used-by self::urlBase()
+	 * @used-by self::urlWalletWSDL()
 	 */
 	private function isProduction():bool {return dfc($this, function():bool {return !!df_cfg(
 		'payment/payme_gateway/main_parameters/payme_environment'
@@ -41,15 +60,13 @@ final class Cfg {
 	 * @used-by self::s()
 	 */
 	private function __construct() {
-		switch ($this->isProduction()) {
-			case 0:
-				$this->wsdomain = 'https://integracion.alignetsac.com';
-				$this->wsdl = $this->wsdomain.'/WALLETWS/services/WalletCommerce?wsdl';
-				break;
-			case 1:
-				$this->wsdomain = 'https://vpayment.verifika.com';
-				$this->wsdl = "https://www.pay-me.pe/WALLETWS/services/WalletCommerce?wsdl";
-				break;
+		if ($this->isProduction()) {
+			$this->wsdomain = 'https://vpayment.verifika.com';
+			$this->wsdl = "https://www.pay-me.pe/WALLETWS/services/WalletCommerce?wsdl";
+		}
+		else {
+			$this->wsdomain = 'https://integracion.alignetsac.com';
+			$this->wsdl = $this->wsdomain.'/WALLETWS/services/WalletCommerce?wsdl';
 		}
 		$this->url = "{$this->wsdomain}/VPOS2/faces/pages/startPayme.xhtml";
 		$this->payme_adquir_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_adquir_id');
