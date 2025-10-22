@@ -63,7 +63,9 @@ final class Cfg {
 		$this->payme_wallet_id_dls = df_cfg(
 			'payment/payme_gateway/pos_parameters_dolares/payme_wallet_id_dls'
 		);
-		$this->payme_wallet_secret_dls = df_cfg(Paymecheckout::XML_PATH_PAYME_WALLET_SECRET_DLS);
+		$this->payme_wallet_secret_dls = df_cfg(
+			'payment/payme_gateway/pos_parameters_dolares/payme_wallet_secret_dls'
+		);
 	}
 
 	/**

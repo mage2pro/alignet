@@ -17,7 +17,6 @@ class Paymecheckout  extends AbstractMethod
     const XML_PATH_TEST       = 'payment/payme/test';
      const XML_PATH_PAYME_DEBUG      = 'payment/payme_gateway/main_parameters/payme_debug';
     const XML_PATH_PAYME_ENVIROMENT       = 'payment/payme_environment';
-    const XML_PATH_PAYME_WALLET_SECRET_DLS       = 'payment/payme_gateway/pos_parameters_dolares/payme_wallet_secret_dls';
     protected $_isGateway = true;
     protected $_canCapture = true;
     protected $_canCapturePartial = true;
