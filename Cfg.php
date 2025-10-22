@@ -8,8 +8,7 @@ final class Cfg {
 	 * @used-by self::urlWalletWSDL()
 	 */
 	function urlBase():string {return $this->isProduction()
-		? 'https://vpayment.verifika.com'
-		: 'https://integracion.alignetsac.com'
+		? 'https://vpayment.verifika.com' : 'https://integracion.alignetsac.com'
 	;}
 
 	/**
