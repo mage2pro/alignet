@@ -4,6 +4,13 @@ use Df\Core\O;
 /** @used-by dfe_alignet_cfg() */
 final class Cfg {
 	/**
+	 * 2025-10-22
+	 */
+	function isProduction():bool {return dfc($this, function():bool {return !!df_cfg(
+		'payment/payme_gateway/main_parameters/payme_environment'
+	);});}
+
+	/**
 	 * @param string|null $key
 	 * @return string|array
 	 */
@@ -36,7 +43,7 @@ final class Cfg {
 	 */
 	private function __construct() {
 		$this->payme_entorno = df_cfg('payment/payme_gateway/main_parameters/payme_environment');
-		switch ($this->payme_entorno) {
+		switch ($this->isProduction()) {
 			case 0:
 				$this->wsdomain = 'https://integracion.alignetsac.com';
 				$this->wsdl = $this->wsdomain.'/WALLETWS/services/WalletCommerce?wsdl';
