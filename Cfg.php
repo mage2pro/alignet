@@ -48,7 +48,7 @@ final class Cfg {
 				$this->url = "https://vpayment.verifika.com/VPOS2/faces/pages/startPayme.xhtml";
 				break;
 		}
-		$payme_adquir_id = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_ADQUIR_ID, 'store');
+		$payme_adquir_id = df_cfg(Paymecheckout::XML_PATH_PAYME_ADQUIR_ID);
 		if ($payme_adquir_id) {
 			$this->payme_adquir_id = $payme_adquir_id;
 		}
