@@ -53,14 +53,10 @@ final class Cfg {
 		$this->payme_comerce_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_comerce_id');
 		$this->payme_vpos_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_vpos_id');
 		$this->payme_wallet_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_wallet_id');
-		$payme_wallet_secret = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_wallet_secret');
-		if ($payme_wallet_secret) {
-			$this->payme_wallet_secret = $payme_wallet_secret;
-		}
-		$payme_adquir_id_dls = df_cfg('payment/payme_gateway/pos_parameters_dolares/payme_adquir_id_dls');
-		if ($payme_adquir_id_dls) {
-			$this->payme_adquir_id_dls = $payme_adquir_id_dls;
-		}
+		$this->payme_wallet_secret = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_wallet_secret');
+		$this->payme_adquir_id_dls = df_cfg(
+			'payment/payme_gateway/pos_parameters_dolares/payme_adquir_id_dls'
+		);
 		$payme_comerce_id_dls = df_cfg(Paymecheckout::XML_PATH_PAYME_COMERCE_ID_DLS);
 		if ($payme_comerce_id_dls) {
 			$this->payme_comerce_id_dls = $payme_comerce_id_dls;
