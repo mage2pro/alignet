@@ -62,11 +62,7 @@ class Start extends \Magento\Framework\App\Action\Action {
 						$clientOrderHelper->getNewStatus()
 					);
 					$this->orderHelper->setNewOrderStatus($order);
-
-					$configHelper = $client->getConfigHelper();
-
-					$this->session->setGatewayUrl($configHelper->getConfig('url'));
-					  $order->setState(\Magento\Sales\Model\Order::STATE_PENDING_PAYMENT, true)->save();
+					$order->setState(\Magento\Sales\Model\Order::STATE_PENDING_PAYMENT, true)->save();
 			$order->setStatus(\Magento\Sales\Model\Order::STATE_PENDING_PAYMENT, true)->save();
 			$order->save();
 
