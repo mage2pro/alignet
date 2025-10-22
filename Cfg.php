@@ -49,10 +49,7 @@ final class Cfg {
 				$this->url = "https://vpayment.verifika.com/VPOS2/faces/pages/startPayme.xhtml";
 				break;
 		}
-		$payme_adquir_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_adquir_id');
-		if ($payme_adquir_id) {
-			$this->payme_adquir_id = $payme_adquir_id;
-		}
+		$this->payme_adquir_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_adquir_id');
 		$payme_comerce_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_comerce_id');
 		if ($payme_comerce_id) {
 			$this->payme_comerce_id = $payme_comerce_id;
