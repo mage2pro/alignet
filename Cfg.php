@@ -41,14 +41,13 @@ final class Cfg {
 			case 0:
 				$this->wsdomain = 'https://integracion.alignetsac.com';
 				$this->wsdl = $this->wsdomain.'/WALLETWS/services/WalletCommerce?wsdl';
-				$this->url = "https://integracion.alignetsac.com/VPOS2/faces/pages/startPayme.xhtml";
 				break;
 			case 1:
 				$this->wsdomain = 'https://vpayment.verifika.com';
 				$this->wsdl = "https://www.pay-me.pe/WALLETWS/services/WalletCommerce?wsdl";
-				$this->url = "https://vpayment.verifika.com/VPOS2/faces/pages/startPayme.xhtml";
 				break;
 		}
+		$this->url = "{$this->wsdomain}/VPOS2/faces/pages/startPayme.xhtml";
 		$this->payme_adquir_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_adquir_id');
 		$this->payme_comerce_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_comerce_id');
 		$this->payme_vpos_id = df_cfg('payment/payme_gateway/pos_parameters_soles/payme_vpos_id');
