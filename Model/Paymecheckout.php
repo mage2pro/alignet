@@ -3,7 +3,6 @@ namespace Dfe\Alignet\Model;
 use Magento\Payment\Model\Method\AbstractMethod;
 class Paymecheckout  extends AbstractMethod {
 	const CODE = 'paymecheckout';
-    const XML_PATH_PAYME_ENVIROMENT       = 'payment/payme_environment';
     protected $_isGateway = true;
     protected $_canCapture = true;
     protected $_canCapturePartial = true;
