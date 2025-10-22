@@ -29,7 +29,6 @@ final class Cfg {
 			'acquirerId_usd' => $this->payme_adquir_id_dls,
 			'idCommerce_usd' => $this->payme_comerce_id_dls,
 			'key_usd' => $this->payme_vpos_id_dls,
-			'payme_entorno' => $this->payme_entorno,
 			'wsdomain' => $this->wsdomain
 		];
 		if ($key) {
@@ -42,7 +41,6 @@ final class Cfg {
 	 * @used-by self::s()
 	 */
 	private function __construct() {
-		$this->payme_entorno = df_cfg('payment/payme_gateway/main_parameters/payme_environment');
 		switch ($this->isProduction()) {
 			case 0:
 				$this->wsdomain = 'https://integracion.alignetsac.com';
