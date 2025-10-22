@@ -64,7 +64,7 @@ final class Cfg {
 		if ($payme_wallet_id) {
 			$this->payme_wallet_id = $payme_wallet_id;
 		}
-		$payme_wallet_secret = $this->scopeConfig->getValue(Paymecheckout::XML_PATH_PAYME_WALLET_SECRET, 'store');
+		$payme_wallet_secret = df_cfg(Paymecheckout::XML_PATH_PAYME_WALLET_SECRET);
 		if ($payme_wallet_secret) {
 			$this->payme_wallet_secret = $payme_wallet_secret;
 		}
