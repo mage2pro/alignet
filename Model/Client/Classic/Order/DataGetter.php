@@ -80,7 +80,7 @@ final class DataGetter {
 			'billingAddress' => $ba['street'],
 			'billingZIP' => $ba['postcode'] ,
 			'billingCity' => $ba['city'],
-			'billingState' => ($ba['region']) ? $ba['region'] : '-',
+			'billingState' => $ba['region'] ? $ba['region'] : '-',
 			'billingCountry' => ($order->getBillingAddress()->getCountryId()) ? $order->getBillingAddress()->getCountryId() : '-',
 			'billingPhone' => $ba['telephone'],
 			'shippingFirstName' => $sa['firstname'],
