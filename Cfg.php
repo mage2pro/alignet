@@ -46,7 +46,6 @@ final class Cfg {
 	/**
 	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getBasicData()
 	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getSigForOrderRetrieve()
-	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getTestMode()
 	 * @param string|null $key
 	 * @return string|array
 	 */
