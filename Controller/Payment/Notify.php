@@ -33,8 +33,7 @@ class Notify extends \Magento\Framework\App\Action\Action {
 		$this->logger = $logger;
 	}
 
-	function execute()
-	{
+	function execute() {
 		/**
 		 * @var $client \Dfe\Alignet\Model\Client
 		 */
