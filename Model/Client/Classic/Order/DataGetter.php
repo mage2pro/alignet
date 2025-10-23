@@ -105,15 +105,15 @@ final class DataGetter {
 			'shippingState' => $sa['region'] ?: '-',
 			'shippingZIP' => $ba['postcode'],
 			'userCodePayme' => $this->userCodePayme([
-				'userCommerce' =>(string)$order->getCustomerId(),
 				'billingEmail' => $ba['email'],
+				'billingEmail'=> $ba['email'],
 				'billingFirstName' => $sa['firstname'],
 				'billingLastName'=> $sa['lastname'],
-				'billingEmail'=> $ba['email'],
+				'currency' => $this->currency_iso,
 				'reserved1'=> '',
 				'reserved2'=> '',
 				'reserved3'=> '',
-				'currency' => $this->currency_iso
+				'userCommerce' =>(string)$order->getCustomerId()
 			]),
 			'userCommerce' =>  (string)$order->getCustomerId(),
 		];
