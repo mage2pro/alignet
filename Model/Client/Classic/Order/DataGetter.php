@@ -199,14 +199,6 @@ final class DataGetter {
 	/**
 	 * @return string
 	 */
-	function getTestMode()
-	{
-		return dfe_alignet_cfg()->getConfig('test');
-	}
-
-	/**
-	 * @return string
-	 */
 	function getClientIp()
 	{
 		return $_SERVER['REMOTE_ADDR'];
