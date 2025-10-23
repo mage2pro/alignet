@@ -63,7 +63,6 @@ final class DataGetter {
 			$this->acquirerId = $c->getConfig('acquirerId_usd');
 			$this->idCommerce = $c->getConfig('idCommerce_usd');
 			$this->key = $c->getConfig('key_usd');
-			// $this->currency_iso = 840;
 		}
 		else {
 			$this->idEntCommerce = $c->getConfig('idEntCommerce');
@@ -71,12 +70,8 @@ final class DataGetter {
 			$this->acquirerId = $c->getConfig('acquirerId');
 			$this->idCommerce = $c->getConfig('idCommerce');
 			$this->key = $c->getConfig('key');
-			// $this->currency_iso = 604;
 		}
-		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());        // $incrementId = str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
-
-
-
+		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode()); 
 		$long = ($this->acquirerId == 144 || $this->acquirerId == 29) ? 6 :6;
 
 		$comerce = [
