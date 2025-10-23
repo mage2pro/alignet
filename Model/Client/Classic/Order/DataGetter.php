@@ -195,7 +195,7 @@ final class DataGetter {
 
 		return (phpversion() >= 5.3) ? openssl_digest($concatPurchase, 'sha512') : hash('sha512', $concatPurchase);
 	}
-	
+
 	/**
 	 * @return string
 	 */
