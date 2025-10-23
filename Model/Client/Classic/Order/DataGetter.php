@@ -199,14 +199,6 @@ final class DataGetter {
 	/**
 	 * @return string
 	 */
-	function getMerchantId()
-	{
-		return dfe_alignet_cfg()->getConfig('acquirerId');
-	}
-
-	/**
-	 * @return string
-	 */
 	function getAccountId()
 	{
 		return dfe_alignet_cfg()->getConfig('idCommerce');
