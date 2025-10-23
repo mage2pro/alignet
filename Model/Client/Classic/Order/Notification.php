@@ -12,7 +12,7 @@ class Notification {
         $ts = $request->getParam('ts');
         $posId = $request->getParam('pos_id');
         $sessionId = $request->getParam('referenceCode');
-        $secondKeyMd5 = $this->configHelper->getConfig('second_key_md5');
+        $secondKeyMd5 = dfe_alignet_cfg()->getConfig('second_key_md5');
         if (md5($posId . $sessionId . $ts . $secondKeyMd5) === $sig) {
             return $sessionId;
         }
