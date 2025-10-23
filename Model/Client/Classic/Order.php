@@ -85,7 +85,6 @@ class Order implements \Dfe\Alignet\Model\Client\OrderInterface {
 	 * @param \Dfe\Alignet\Model\Session $session
 	 * @param \Magento\Framework\App\RequestInterface $request
 	 * @param \Dfe\Alignet\Logger\Logger $logger
-	 * @param Order\Notification $notificationHelper
 	 * @param MethodCaller $methodCaller
 	 * @param \Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource
 	 * @param Order\Processor $orderProcessor
