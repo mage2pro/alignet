@@ -103,7 +103,6 @@ class Order implements \Dfe\Alignet\Model\Client\OrderInterface {
 		\Dfe\Alignet\Model\Session $session,
 		\Magento\Framework\App\RequestInterface $request,
 		\Dfe\Alignet\Logger\Logger $logger,
-		Order\Notification $notificationHelper,
 		MethodCaller $methodCaller,
 		\Dfe\Alignet\Model\ResourceModel\Transaction $transactionResource,
 		Order\Processor $orderProcessor,
@@ -115,7 +114,6 @@ class Order implements \Dfe\Alignet\Model\Client\OrderInterface {
 		$this->session = $session;
 		$this->request = $request;
 		$this->logger = $logger;
-		$this->notificationHelper = $notificationHelper;
 		$this->methodCaller = $methodCaller;
 		$this->transactionResource = $transactionResource;
 		$this->orderProcessor = $orderProcessor;
