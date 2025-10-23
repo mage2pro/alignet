@@ -142,10 +142,11 @@ final class DataGetter {
 		return $iso_code;
 	}
 
-  function purchaseVerification($purchOperNum, $purchAmo, $purchCurrCod, $authRes = null)
-	{
+	/**
+	 * @used-by self::getBasicData()
+	 */
+	function purchaseVerification($purchOperNum, $purchAmo, $purchCurrCod, $authRes = null) {
 		$concatPurchase = $this->acquirerId.$this->idCommerce.$purchOperNum.$purchAmo.$purchCurrCod.$authRes.$this->key;
-
 		return (phpversion() >= 5.3) ? openssl_digest($concatPurchase, 'sha512') : hash('sha512', $concatPurchase);
 	}
 
