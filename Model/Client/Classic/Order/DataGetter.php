@@ -48,7 +48,7 @@ final class DataGetter {
 	 */
 	function getBasicData(\Magento\Sales\Model\Order $order) {
 		$oid =(int)$order->getId(); /** @var int $oid */
-		$ba = $order->getBillingAddress()->getData();
+		$ba = $order->getBillingAddress();
 		$shippingAddress = $order->getShippingAddress();
 		$shippingAddressArray =$shippingAddress->getData();
 		$taxReturnBase = number_format(($order->getGrandTotal() - $order->getTaxAmount()),2,'.','');
