@@ -18,35 +18,13 @@ final class DataGetter {
 	 */
 	protected $session;
 
-
 	protected $idEntCommerce;
-
-
-	/**
-	 * @var \Dfe\Alignet\Model\Session
-	 */
 	protected $keywallet;
-
-
-
-	/**
-	 * @var \Dfe\Alignet\Model\Session
-	 */
 	protected $idCommerce;
-
-
-
-	/**
-	 * @var \Dfe\Alignet\Model\Session
-	 */
 	protected $key;
-
 	protected $modalVPOS2;
-
 	protected $tipoModal;
-
 	protected $currency_iso;
-
 
 	/**
 	 * @param \Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper
