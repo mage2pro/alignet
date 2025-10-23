@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/alignet"
-	,"version": "4.0.2"
+	,"version": "4.0.3"
 	,"description": "The Alignet payment service integration with Magento 2"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/mage2pro/alignet"
