@@ -1,5 +1,6 @@
 <?php
 namespace Dfe\Alignet\Model\Client\Classic\Order;
+use Dfe\Alignet\Cfg;
 # 2020-12-09
 final class DataGetter {
 	 /**
