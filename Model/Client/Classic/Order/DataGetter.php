@@ -49,7 +49,7 @@ final class DataGetter {
 	function getBasicData(\Magento\Sales\Model\Order $order) {
 		$oid =(int)$order->getId(); /** @var int $oid */
 		$ba = $order->getBillingAddress();
-		$shippingAddressArray = $order->getShippingAddress()->getData();
+		$sa = $order->getShippingAddress()->getData();
 		$taxReturnBase = number_format(($order->getGrandTotal() - $order->getTaxAmount()),2,'.','');
 		if ($order->getTaxAmount() == 0) {
 			$taxReturnBase = 0;
@@ -88,21 +88,21 @@ final class DataGetter {
 			'billingState' => ($ba['region']) ? $ba['region'] : '-',
 			'billingCountry' => ($order->getBillingAddress()->getCountryId()) ? $order->getBillingAddress()->getCountryId() : '-',
 			'billingPhone' => $ba['telephone'],
-			'shippingFirstName' => $shippingAddressArray['firstname'],
-			'shippingLastName' => $shippingAddressArray['lastname'],
-			'shippingEmail' =>$shippingAddressArray['email'],
-			'shippingAddress' => $shippingAddressArray['street'],
+			'shippingFirstName' => $sa['firstname'],
+			'shippingLastName' => $sa['lastname'],
+			'shippingEmail' =>$sa['email'],
+			'shippingAddress' => $sa['street'],
 			'shippingZIP' => $ba['postcode'],
-			'shippingCity' =>$shippingAddressArray['city'],
-			'shippingState' =>($shippingAddressArray['region']) ? $shippingAddressArray['region'] : '-',
+			'shippingCity' =>$sa['city'],
+			'shippingState' =>($sa['region']) ? $sa['region'] : '-',
 			'shippingCountry' => ($order->getShippingAddress()->getCountryId()) ? $order->getShippingAddress()->getCountryId() : '-',
-			'shippingPhone' =>$shippingAddressArray['telephone'],
+			'shippingPhone' =>$sa['telephone'],
 			'userCommerce' =>  (string)$order->getCustomerId(),
 			'userCodePayme' => $this->userCodePayme([
 				'userCommerce' =>(string)$order->getCustomerId(),
 				'billingEmail' => $ba['email'],
-				'billingFirstName' => $shippingAddressArray['firstname'],
-				'billingLastName'=> $shippingAddressArray['lastname'],
+				'billingFirstName' => $sa['firstname'],
+				'billingLastName'=> $sa['lastname'],
 				'billingEmail'=> $ba['email'],
 				'reserved1'=> '',
 				'reserved2'=> '',
