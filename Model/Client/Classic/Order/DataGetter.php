@@ -66,7 +66,6 @@ final class DataGetter {
 			$this->key = $c->getConfig('key');
 		}
 		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());
-		$long = ($this->acquirerId == 144 || $this->acquirerId == 29) ? 6 :6;
 		$purchaseAmountVar =str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
 		$data = [
 			'acquirerId' => $this->acquirerId,
