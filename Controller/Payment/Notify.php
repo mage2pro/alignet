@@ -1,5 +1,6 @@
 <?php
 namespace Dfe\Alignet\Controller\Payment;
+use Dfe\Alignet\Model\Client as Cl;
 use Magento\Framework\Exception\LocalizedException;
 class Notify extends \Magento\Framework\App\Action\Action {
 	/**
@@ -34,14 +35,11 @@ class Notify extends \Magento\Framework\App\Action\Action {
 	}
 
 	function execute() {
-		/**
-		 * @var $client \Dfe\Alignet\Model\Client
-		 */
 		$request = $this->context->getRequest();
 		try {
-			$client = dfe_alignet_cl();
-			$response = $client->orderConsumeNotification($request);
-			$clientOrderHelper = $client->getOrderHelper();
+			$cl = dfe_alignet_cl(); /** @var Cl $cl */
+			$response = $cl->orderConsumeNotification($request);
+			$clientOrderHelper = $cl->getOrderHelper();
 			if ($clientOrderHelper->canProcessNotification($response['referenceCode'])) {
 				return $clientOrderHelper->processNotification(
 					$response['referenceCode'],
