@@ -80,16 +80,16 @@ final class DataGetter {
 		if ($order->getTaxAmount() == 0) {
 			$taxReturnBase = 0;
 		}
+		$c = dfe_alignet_cfg(); /** @var Cfg $c */
 		if ($order->getOrderCurrencyCode() == 'USD') {
-			$this->idEntCommerce = $this->configHelper->getConfig('idEntCommerce_usd');
-			$this->keywallet = $this->configHelper->getConfig('keywallet_usd');
-			$this->acquirerId = $this->configHelper->getConfig('acquirerId_usd');
-			$this->idCommerce = $this->configHelper->getConfig('idCommerce_usd');
-			$this->key = $this->configHelper->getConfig('key_usd');
+			$this->idEntCommerce = $c->getConfig('idEntCommerce_usd');
+			$this->keywallet = $c->getConfig('keywallet_usd');
+			$this->acquirerId = $c->getConfig('acquirerId_usd');
+			$this->idCommerce = $c>getConfig('idCommerce_usd');
+			$this->key = $c->getConfig('key_usd');
 			// $this->currency_iso = 840;
 		}
-		else
-		{
+		else {
 			$this->idEntCommerce = $this->configHelper->getConfig('idEntCommerce');
 			$this->keywallet = $this->configHelper->getConfig('keywallet');
 			$this->acquirerId = $this->configHelper->getConfig('acquirerId');
