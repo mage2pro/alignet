@@ -240,7 +240,7 @@ final class DataGetter {
 	 * @param array $data
 	 * @return string
 	 */
-	function getSigForOrderCreate(array $data = []){return md5($this->configHelper->getConfig('keywallet'));}
+	function getSigForOrderCreate(array $data = []) {return md5(dfe_alignet_cfg()->getConfig('keywallet'));}
 
 	/**
 	 * @param array $data
