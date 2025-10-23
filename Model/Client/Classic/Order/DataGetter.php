@@ -240,15 +240,7 @@ final class DataGetter {
 	 * @param array $data
 	 * @return string
 	 */
-	function getSigForOrderCreate(array $data = [])
-	{
-		//Signature Format
-		//“ApiKey~merchantId~referenceCode~amount~currency”.
-
-		return md5(
-			$this->configHelper->getConfig('keywallet')
-		);
-	}
+	function getSigForOrderCreate(array $data = []){return md5($this->configHelper->getConfig('keywallet'));}
 
 	/**
 	 * @param array $data
