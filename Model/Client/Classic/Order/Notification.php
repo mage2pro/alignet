@@ -3,8 +3,10 @@ namespace Dfe\Alignet\Model\Client\Classic\Order;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
 class Notification {
-    function getPayuplOrderId($request)
-    {
+	/**
+	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order::consumeNotification()
+	 */
+    function getPayuplOrderId($request) {
         if (!$request->isPost()) {
             throw new LocalizedException(new Phrase('POST request is required.'));
         }
