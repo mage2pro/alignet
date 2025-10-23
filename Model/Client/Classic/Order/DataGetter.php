@@ -75,19 +75,15 @@ final class DataGetter {
 		$long = ($this->acquirerId == 144 || $this->acquirerId == 29) ? 6 :6;
 		$comerce = [
 			'userCommerce' =>(string)$order->getCustomerId(),
-			'billingEmail'=>$billingAddresssArray['email'],
-			'billingFirstName'=>$shippingAddressArray['firstname'],
-			'billingLastName'=>$shippingAddressArray['lastname'],
+			'billingEmail' => $billingAddresssArray['email'],
+			'billingFirstName' => $shippingAddressArray['firstname'],
+			'billingLastName'=> $shippingAddressArray['lastname'],
 			'billingEmail'=> $billingAddresssArray['email'],
-			'reserved1'=>'',
-			'reserved2'=>'',
-			'reserved3'=>'',
-			'currency' =>$this->currency_iso
+			'reserved1'=> '',
+			'reserved2'=> '',
+			'reserved3'=> '',
+			'currency' => $this->currency_iso
 		];
-
-
-
-
 		$purchaseAmountVar =str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
 
 		$data = [
