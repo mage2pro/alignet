@@ -100,6 +100,10 @@ class Client {
 	 * @throws LocalizedException
 	 */
 	function orderConsumeNotification(\Magento\Framework\App\Request\Http $request) {
+		# 2025-10-23
+		# "`Dfe\Alignet\Model\Client\Classic\Order::consumeNotification()` calls the broken method
+		# `Dfe\Alignet\Model\Client\Classic\Order\Notification::getPayuplOrderId()`":
+		# https://github.com/mage2pro/alignet/issues/19
 		$result = $this->orderHelper->consumeNotification($request);
 		if (!$result) {
 			throw new LocalizedException(new Phrase(
