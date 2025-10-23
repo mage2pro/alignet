@@ -73,7 +73,6 @@ final class DataGetter {
 			$this->key = $c->getConfig('key');
 			// $this->currency_iso = 604;
 		}
-
 		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());        // $incrementId = str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
 
 
