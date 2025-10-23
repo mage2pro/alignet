@@ -50,18 +50,15 @@ final class DataGetter {
 
 	/**
 	 * @param \Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper
-	 * @param \Dfe\Alignet\Cfg $configHelper
 	 * @param \Magento\Framework\Stdlib\DateTime\DateTime $dateTime
 	 * @param \Dfe\Alignet\Model\Session $session
 	 */
 	function __construct(
 		\Dfe\Alignet\Model\Order\ExtOrderId $extOrderIdHelper,
-		\Dfe\Alignet\Cfg $configHelper,
 		\Magento\Framework\Stdlib\DateTime\DateTime $dateTime,
 		\Dfe\Alignet\Model\Session $session
 	) {
 		$this->extOrderIdHelper = $extOrderIdHelper;
-		$this->configHelper = $configHelper;
 		$this->dateTime = $dateTime;
 		$this->session = $session;
 	}
