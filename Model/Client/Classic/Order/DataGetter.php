@@ -52,9 +52,7 @@ final class DataGetter {
 		$billingAddresssArray =$billingAddress->getData();
 		$shippingAddress = $order->getShippingAddress();
 		$shippingAddressArray =$shippingAddress->getData();
-
 		$taxReturnBase = number_format(($order->getGrandTotal() - $order->getTaxAmount()),2,'.','');
-
 		if ($order->getTaxAmount() == 0) {
 			$taxReturnBase = 0;
 		}
