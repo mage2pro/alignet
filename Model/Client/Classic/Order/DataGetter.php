@@ -85,7 +85,7 @@ final class DataGetter {
 			$this->idEntCommerce = $c->getConfig('idEntCommerce_usd');
 			$this->keywallet = $c->getConfig('keywallet_usd');
 			$this->acquirerId = $c->getConfig('acquirerId_usd');
-			$this->idCommerce = $c>getConfig('idCommerce_usd');
+			$this->idCommerce = $c->getConfig('idCommerce_usd');
 			$this->key = $c->getConfig('key_usd');
 			// $this->currency_iso = 840;
 		}

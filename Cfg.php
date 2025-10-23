@@ -44,6 +44,7 @@ final class Cfg {
 	;}
 
 	/**
+	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getBasicData()
 	 * @param string|null $key
 	 * @return string|array
 	 */
