@@ -50,10 +50,6 @@ final class DataGetter {
 		$oid =(int)$order->getId(); /** @var int $oid */
 		$ba = $order->getBillingAddress();
 		$sa = $order->getShippingAddress();
-		$taxReturnBase = number_format(($order->getGrandTotal() - $order->getTaxAmount()),2,'.','');
-		if ($order->getTaxAmount() == 0) {
-			$taxReturnBase = 0;
-		}
 		$c = dfe_alignet_cfg(); /** @var Cfg $c */
 		if ($order->getOrderCurrencyCode() == 'USD') {
 			$this->idEntCommerce = $c->getConfig('idEntCommerce_usd');
