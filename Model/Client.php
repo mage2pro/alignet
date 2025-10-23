@@ -114,10 +114,4 @@ class Client {
 	 * @return Client\OrderInterface
 	 */
 	function getOrderHelper() {return $this->orderHelper;}
-
-	/**
-	 * @used-by \Dfe\Alignet\Controller\Payment\Start::execute()
-	 * @return Cfg
-	 */
-	function getConfigHelper() {return $this->configHelper;}
 }
