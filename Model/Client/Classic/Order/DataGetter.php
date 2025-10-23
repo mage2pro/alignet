@@ -201,7 +201,7 @@ final class DataGetter {
 	 */
 	function getMerchantId()
 	{
-		return $this->configHelper->getConfig('acquirerId');
+		return dfe_alignet_cfg()->getConfig('acquirerId');
 	}
 
 	/**
@@ -209,7 +209,7 @@ final class DataGetter {
 	 */
 	function getAccountId()
 	{
-		return $this->configHelper->getConfig('idCommerce');
+		return dfe_alignet_cfg()->getConfig('idCommerce');
 	}
 
 	/**
@@ -217,7 +217,7 @@ final class DataGetter {
 	 */
 	function getTestMode()
 	{
-		return $this->configHelper->getConfig('test');
+		return dfe_alignet_cfg()->getConfig('test');
 	}
 
 	/**
