@@ -48,7 +48,7 @@ final class DataGetter {
 	 */
 	function getBasicData(\Magento\Sales\Model\Order $order) {
 		$oid =(int)$order->getId(); /** @var int $oid */
-		$billingAddresssArray = $order->getBillingAddress()->getData();
+		$ba = $order->getBillingAddress()->getData();
 		$shippingAddress = $order->getShippingAddress();
 		$shippingAddressArray =$shippingAddress->getData();
 		$taxReturnBase = number_format(($order->getGrandTotal() - $order->getTaxAmount()),2,'.','');
@@ -80,20 +80,20 @@ final class DataGetter {
 			'purchaseAmount' =>  $purchaseAmountVar,
 			'purchaseCurrencyCode' =>   $this->currency_iso,
 			'language' => 'ES',
-			'billingFirstName' =>$billingAddresssArray['firstname'],
-			'billingLastName' =>$billingAddresssArray['lastname'],
-			'billingEmail' => $billingAddresssArray['email'],
-			'billingAddress' => $billingAddresssArray['street'],
-			'billingZIP' => $billingAddresssArray['postcode'] ,
-			'billingCity' =>$billingAddresssArray['city'],
-			'billingState' => ($billingAddresssArray['region']) ? $billingAddresssArray['region'] : '-',
+			'billingFirstName' =>$ba['firstname'],
+			'billingLastName' =>$ba['lastname'],
+			'billingEmail' => $ba['email'],
+			'billingAddress' => $ba['street'],
+			'billingZIP' => $ba['postcode'] ,
+			'billingCity' =>$ba['city'],
+			'billingState' => ($ba['region']) ? $ba['region'] : '-',
 			'billingCountry' => ($order->getBillingAddress()->getCountryId()) ? $order->getBillingAddress()->getCountryId() : '-',
-			'billingPhone' => $billingAddresssArray['telephone'],
+			'billingPhone' => $ba['telephone'],
 			'shippingFirstName' => $shippingAddressArray['firstname'],
 			'shippingLastName' => $shippingAddressArray['lastname'],
 			'shippingEmail' =>$shippingAddressArray['email'],
 			'shippingAddress' => $shippingAddressArray['street'],
-			'shippingZIP' => $billingAddresssArray['postcode'],
+			'shippingZIP' => $ba['postcode'],
 			'shippingCity' =>$shippingAddressArray['city'],
 			'shippingState' =>($shippingAddressArray['region']) ? $shippingAddressArray['region'] : '-',
 			'shippingCountry' => ($order->getShippingAddress()->getCountryId()) ? $order->getShippingAddress()->getCountryId() : '-',
@@ -101,10 +101,10 @@ final class DataGetter {
 			'userCommerce' =>  (string)$order->getCustomerId(),
 			'userCodePayme' => $this->userCodePayme([
 				'userCommerce' =>(string)$order->getCustomerId(),
-				'billingEmail' => $billingAddresssArray['email'],
+				'billingEmail' => $ba['email'],
 				'billingFirstName' => $shippingAddressArray['firstname'],
 				'billingLastName'=> $shippingAddressArray['lastname'],
-				'billingEmail'=> $billingAddresssArray['email'],
+				'billingEmail'=> $ba['email'],
 				'reserved1'=> '',
 				'reserved2'=> '',
 				'reserved3'=> '',
