@@ -71,9 +71,8 @@ final class DataGetter {
 			$this->idCommerce = $c->getConfig('idCommerce');
 			$this->key = $c->getConfig('key');
 		}
-		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode()); 
+		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());
 		$long = ($this->acquirerId == 144 || $this->acquirerId == 29) ? 6 :6;
-
 		$comerce = [
 			'userCommerce' =>(string)$order->getCustomerId(),
 			'billingEmail'=>$billingAddresssArray['email'],
