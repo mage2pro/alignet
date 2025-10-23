@@ -1,29 +1,8 @@
 <?php
-/**
- *
- */
-
 namespace Dfe\Alignet\Model\Client\Classic\Order;
-
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Phrase;
-
-class Notification
-{
-    /**
-     * @var \Dfe\Alignet\Cfg
-     */
-    protected $configHelper;
-
-    /**
-     * @param \Dfe\Alignet\Cfg $configHelper
-     */
-    function __construct(
-        \Dfe\Alignet\Cfg $configHelper
-    ) {
-        $this->configHelper = $configHelper;
-    }
-
+class Notification {
     function getPayuplOrderId($request)
     {
         if (!$request->isPost()) {
