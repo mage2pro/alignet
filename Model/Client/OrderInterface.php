@@ -64,14 +64,6 @@ interface OrderInterface {
 	function statusUpdate(array $data = []);
 
 	/**
-	 * Returns false on fail or array with the following keys on success: paymecheckoutOrderId, status, amount
-	 *
-	 * @param \Magento\Framework\App\Request\Http $request
-	 * @return array|false
-	 */
-	function consumeNotification(\Magento\Framework\App\Request\Http $request);
-
-	/**
 	 * 2020-12-09
 	 * @see \Dfe\Alignet\Model\Client\Classic\Order::getDataForOrderCreate()
 	 * @param \Magento\Sales\Model\Order $order
