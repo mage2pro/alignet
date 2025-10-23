@@ -9,11 +9,6 @@ final class DataGetter {
 	protected $extOrderIdHelper;
 
 	/**
-	 * @var \Dfe\Alignet\Cfg
-	 */
-	protected $configHelper;
-
-	/**
 	 * @var \Magento\Framework\Stdlib\DateTime\DateTime
 	 */
 	protected $dateTime;
