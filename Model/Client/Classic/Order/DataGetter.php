@@ -77,7 +77,9 @@ final class DataGetter {
 
 		$taxReturnBase = number_format(($order->getGrandTotal() - $order->getTaxAmount()),2,'.','');
 
-		if($order->getTaxAmount() == 0) $taxReturnBase = 0;
+		if ($order->getTaxAmount() == 0) {
+			$taxReturnBase = 0;
+		}
 		if ($order->getOrderCurrencyCode() == 'USD') {
 			$this->idEntCommerce = $this->configHelper->getConfig('idEntCommerce_usd');
 			$this->keywallet = $this->configHelper->getConfig('keywallet_usd');
