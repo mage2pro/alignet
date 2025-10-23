@@ -24,7 +24,6 @@ function dfe_alignet_cl() {return df_new_om(Cl::class);}
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getSigForOrderRetrieve()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getTestMode()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::userCodePayme()
- * @used-by \Dfe\Alignet\Model\Client\Classic\Order\Notification::getPayuplOrderId()
  * @used-by vendor/mage2pro/alignet/view/frontend/templates/classic/form.phtml
  */
 function dfe_alignet_cfg() {return Cfg::s();}
