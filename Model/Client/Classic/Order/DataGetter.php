@@ -73,19 +73,7 @@ final class DataGetter {
 		}
 		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());
 		$long = ($this->acquirerId == 144 || $this->acquirerId == 29) ? 6 :6;
-		$comerce = [
-			'userCommerce' =>(string)$order->getCustomerId(),
-			'billingEmail' => $billingAddresssArray['email'],
-			'billingFirstName' => $shippingAddressArray['firstname'],
-			'billingLastName'=> $shippingAddressArray['lastname'],
-			'billingEmail'=> $billingAddresssArray['email'],
-			'reserved1'=> '',
-			'reserved2'=> '',
-			'reserved3'=> '',
-			'currency' => $this->currency_iso
-		];
 		$purchaseAmountVar =str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
-
 		$data = [
 			'acquirerId' => $this->acquirerId,
 			'idCommerce' =>  $this->idCommerce,
@@ -112,7 +100,17 @@ final class DataGetter {
 			'shippingCountry' => ($order->getShippingAddress()->getCountryId()) ? $order->getShippingAddress()->getCountryId() : '-',
 			'shippingPhone' =>$shippingAddressArray['telephone'],
 			'userCommerce' =>  (string)$order->getCustomerId(),
-			'userCodePayme' => $this->userCodePayme($comerce),
+			'userCodePayme' => $this->userCodePayme([
+				'userCommerce' =>(string)$order->getCustomerId(),
+				'billingEmail' => $billingAddresssArray['email'],
+				'billingFirstName' => $shippingAddressArray['firstname'],
+				'billingLastName'=> $shippingAddressArray['lastname'],
+				'billingEmail'=> $billingAddresssArray['email'],
+				'reserved1'=> '',
+				'reserved2'=> '',
+				'reserved3'=> '',
+				'currency' => $this->currency_iso
+			]),
 			'descriptionProducts' => 'Productos varios',
 			'programmingLanguage' => 'ALG-MG-v3.0.3',
 			'reserved2' => '',
