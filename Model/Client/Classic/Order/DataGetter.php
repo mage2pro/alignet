@@ -87,7 +87,7 @@ final class DataGetter {
 			,'purchaseCurrencyCode' =>  $this->currency_iso
 			,'purchaseOperationNumber' => $oid
 			,'purchaseVerification' => $this->purchaseVerification($oid, $amt, $this->currency_iso)
-			,'reserved1' => $order->getIncrementId() # 2025-10-23
+			,'reserved1' => "Order # {$order->getIncrementId()}" # 2025-10-23
 			,'reserved2' => ''
 			,'reserved3' => ''
 			,'reserved4' => ''
