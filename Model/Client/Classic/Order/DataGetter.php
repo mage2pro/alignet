@@ -67,6 +67,7 @@ final class DataGetter {
 		}
 		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());
 		$amt = str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
+		# 2025-10-23 https://docs.alignet.com/redirect/working-version/parametros-de-envio-y-respuesta
 		return [
 			'acquirerId' => $this->acquirerId,
 			'billingAddress' => $ba['street'],
