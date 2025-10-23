@@ -21,6 +21,7 @@ function dfe_alignet_cl() {return df_new_om(Cl::class);}
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getBasicData()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getMerchantId()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getSigForOrderCreate()
+ * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getSigForOrderRetrieve()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getTestMode()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::userCodePayme()
  */
