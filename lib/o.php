@@ -18,6 +18,7 @@ function dfe_alignet_cl() {return df_new_om(Cl::class);}
  * "Refactor `Dfe\Alignet\Model\Client\ConfigInterface` as it currently has only one implementation":
  * https://github.com/mage2pro/alignet/issues/6
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getAccountId()
+ * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getBasicData()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getMerchantId()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getTestMode()
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::userCodePayme()
