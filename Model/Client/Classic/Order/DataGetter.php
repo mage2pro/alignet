@@ -66,12 +66,12 @@ final class DataGetter {
 			$this->key = $c->getConfig('key');
 		}
 		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());
-		$purchaseAmountVar =str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
+		$amt = str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
 		$data = [
 			'acquirerId' => $this->acquirerId,
 			'idCommerce' =>  $this->idCommerce,
 			'purchaseOperationNumber' => $oid,
-			'purchaseAmount' =>  $purchaseAmountVar,
+			'purchaseAmount' =>  $amt,
 			'purchaseCurrencyCode' =>   $this->currency_iso,
 			'language' => 'ES',
 			'billingFirstName' =>$ba['firstname'],
@@ -115,7 +115,7 @@ final class DataGetter {
 			'reserved8' => '',
 			'reserved9' => '',
 			'reserved10' => '',
-			'purchaseVerification' => $this->purchaseVerification($oid, $purchaseAmountVar, $this->currency_iso),
+			'purchaseVerification' => $this->purchaseVerification($oid, $amt, $this->currency_iso),
 
 		];
 
