@@ -9,11 +9,6 @@ use Magento\Framework\Phrase;
  */
 class Client {
 	/**
-	 * @var Cfg
-	 */
-	protected $configHelper;
-
-	/**
 	 * @var Client\OrderInterface
 	 */
 	protected $orderHelper;
@@ -23,7 +18,6 @@ class Client {
 	 */
 	function __construct(Client\OrderInterface $orderHelper) {
 		$this->orderHelper = $orderHelper;
-		$this->configHelper = dfe_alignet_cfg();
 	}
 
 	/**
