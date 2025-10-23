@@ -90,11 +90,11 @@ final class DataGetter {
 			// $this->currency_iso = 840;
 		}
 		else {
-			$this->idEntCommerce = $this->configHelper->getConfig('idEntCommerce');
-			$this->keywallet = $this->configHelper->getConfig('keywallet');
-			$this->acquirerId = $this->configHelper->getConfig('acquirerId');
-			$this->idCommerce = $this->configHelper->getConfig('idCommerce');
-			$this->key = $this->configHelper->getConfig('key');
+			$this->idEntCommerce = $c->getConfig('idEntCommerce');
+			$this->keywallet = $c->getConfig('keywallet');
+			$this->acquirerId = $c->getConfig('acquirerId');
+			$this->idCommerce = $c->getConfig('idCommerce');
+			$this->key = $c->getConfig('key');
 			// $this->currency_iso = 604;
 		}
 
