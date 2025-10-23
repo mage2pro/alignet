@@ -67,7 +67,7 @@ final class DataGetter {
 		}
 		$this->currency_iso = $this->setCurrencyIso($order->getOrderCurrencyCode());
 		$amt = str_replace('.','',number_format($order->getGrandTotal(),2,'.',''));
-		$data = [
+		return [
 			'acquirerId' => $this->acquirerId,
 			'idCommerce' =>  $this->idCommerce,
 			'purchaseOperationNumber' => $oid,
@@ -116,10 +116,7 @@ final class DataGetter {
 			'reserved9' => '',
 			'reserved10' => '',
 			'purchaseVerification' => $this->purchaseVerification($oid, $amt, $this->currency_iso),
-
 		];
-
-		return $data;
 	}
 
 	function setCurrencyIso($code){
