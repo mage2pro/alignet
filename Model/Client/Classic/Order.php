@@ -59,11 +59,6 @@ class Order implements \Dfe\Alignet\Model\Client\OrderInterface {
 	protected $logger;
 
 	/**
-	 * @var Order\Notification
-	 */
-	protected $notificationHelper;
-
-	/**
 	 * @var MethodCaller
 	 */
 	protected $methodCaller;
