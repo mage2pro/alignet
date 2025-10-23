@@ -100,11 +100,6 @@ final class Cfg {
 	/**
 	 * @var string
 	 */
-	private $url;
-
-	/**
-	 * @var string
-	 */
 	private $payme_adquir_id;
 
    /**
