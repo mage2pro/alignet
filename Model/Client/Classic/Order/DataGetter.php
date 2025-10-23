@@ -72,7 +72,7 @@ final class DataGetter {
 			'idCommerce' =>  $this->idCommerce,
 			'purchaseOperationNumber' => $oid,
 			'purchaseAmount' =>  $amt,
-			'purchaseCurrencyCode' =>   $this->currency_iso,
+			'purchaseCurrencyCode' =>  $this->currency_iso,
 			'language' => 'ES',
 			'billingFirstName' =>$ba['firstname'],
 			'billingLastName' =>$ba['lastname'],
