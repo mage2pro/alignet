@@ -50,6 +50,7 @@ final class Cfg {
 	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getSigForOrderCreate()
 	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getSigForOrderRetrieve()
 	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getTestMode()
+	 * @used-by \Dfe\Alignet\Model\Client\Classic\Order\Notification::getPayuplOrderId()
 	 * @param string|null $key
 	 * @return string|array
 	 */
