@@ -90,7 +90,7 @@ final class DataGetter {
 			'shippingZIP' => $ba['postcode'],
 			'shippingCity' => $sa['city'],
 			'shippingState' => $sa['region'] ?: '-',
-			'shippingCountry' => ($order->getShippingAddress()->getCountryId()) ? $order->getShippingAddress()->getCountryId() : '-',
+			'shippingCountry' => $order->getShippingAddress()->getCountryId() ?: '-',
 			'shippingPhone' =>$sa['telephone'],
 			'userCommerce' =>  (string)$order->getCustomerId(),
 			'userCodePayme' => $this->userCodePayme([
