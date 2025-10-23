@@ -219,7 +219,7 @@ final class DataGetter {
 	function getSigForOrderRetrieve(array $data = []) {return md5(dfe_alignet_cfg()->getConfig('keywallet'));}
 
 	/**
-	 * @used-by getBasicData()
+	 * @used-by self::getBasicData()
 	 * @param array(string => mixed) $d
 	 * @return string
 	 * @throws \SoapFault
