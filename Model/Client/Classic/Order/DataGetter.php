@@ -107,7 +107,6 @@ final class DataGetter {
 			,'shippingZIP' => $ba['postcode']
 			,'userCodePayme' => $this->userCodePayme([
 				'billingEmail' => $ba['email']
-				,'billingEmail'=> $ba['email']
 				,'billingFirstName' => $sa['firstname']
 				,'billingLastName'=> $sa['lastname']
 				,'currency' => $this->currency_iso
