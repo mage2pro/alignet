@@ -37,6 +37,10 @@ class Notify extends \Magento\Framework\App\Action\Action {
 	function execute() {
 		try {
 			$cl = dfe_alignet_cl(); /** @var Cl $cl */
+			# 2025-10-23
+			# "`Dfe\Alignet\Controller\Payment\Notify::execute()`
+			# calls the broken method `Dfe\Alignet\Model\Client::orderConsumeNotification()`":
+			# https://github.com/mage2pro/alignet/issues/20
 			$response = $cl->orderConsumeNotification($this->context->getRequest());
 			$clientOrderHelper = $cl->getOrderHelper();
 			if ($clientOrderHelper->canProcessNotification($response['referenceCode'])) {
