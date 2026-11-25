@@ -7,7 +7,7 @@ use Magento\Framework\App\Request\InvalidRequestException;
 use Magento\Payment\Model\MethodInterface as IM;
 use Magento\Sales\Model\Order as O;
 use Magento\Sales\Model\Order\Payment as OP;
-# 2020-12-09, 2025-09-23 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+# 2020-12-09, 2025-09-23 Dmitrii Fediuk https://github.com/dmitrii-fediuk
 # "Refactor the `Alignet_Paymecheckout` module": https://github.com/innomuebles/m2/issues/10
 /** @final Unable to use the PHP «final» keyword here because of the M2 code generation. */
 class Response extends \Magento\Framework\App\Action\Action implements CsrfAwareActionInterface {

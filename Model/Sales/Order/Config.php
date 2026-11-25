@@ -34,7 +34,7 @@ class Config extends \Magento\Sales\Model\Order\Config
 
     /**
      * Gets PayuLatam-specific default status for state.
-	 * 2020-12-08 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+	 * 2020-12-08 Dmitry Fedyuk https://github.com/dmitrii-fediuk
 	 * "«Declaration of Dfe\Alignet\Model\Sales\Order\Config::getStateDefaultStatus($state)
 	 * must be compatible with Magento\Sales\Model\Order\Config::getStateDefaultStatus($state): ?string»":
 	 * https://github.com/innomuebles/m2/issues/6

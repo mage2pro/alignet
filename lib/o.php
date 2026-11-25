@@ -4,7 +4,7 @@ use Dfe\Alignet\Model\Client\Classic as Cl;
 use Dfe\Alignet\Model\Session as S;
 
 /**
- * 2025-10-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+ * 2025-10-22 Dmitrii Fediuk https://github.com/dmitrii-fediuk
  * "Delete `Dfe\Alignet\Model\ClientFactory`": https://github.com/mage2pro/alignet/issues/9
  * @used-by \Dfe\Alignet\Block\Payment\Info::_prepareSpecificInformation()
  * @used-by \Dfe\Alignet\Controller\Payment\End::getClientOrderHelper()
@@ -14,7 +14,7 @@ use Dfe\Alignet\Model\Session as S;
 function dfe_alignet_cl() {return df_new_om(Cl::class);}
 
 /**
- * 2025-10-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+ * 2025-10-22 Dmitrii Fediuk https://github.com/dmitrii-fediuk
  * "Refactor `Dfe\Alignet\Model\Client\ConfigInterface` as it currently has only one implementation":
  * https://github.com/mage2pro/alignet/issues/6
  * @used-by \Dfe\Alignet\Model\Client\Classic\Order\DataGetter::getBasicData()
@@ -25,7 +25,7 @@ function dfe_alignet_cl() {return df_new_om(Cl::class);}
 function dfe_alignet_cfg() {return Cfg::s();}
 
 /**
- * 2025-09-23 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+ * 2025-09-23 Dmitrii Fediuk https://github.com/dmitrii-fediuk
  * "Refactor the `Alignet_Paymecheckout` module": https://github.com/innomuebles/m2/issues/10
  */
 function dfe_alignet_payme_sess() {return df_o(S::class);}
